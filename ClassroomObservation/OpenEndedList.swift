@@ -18,6 +18,8 @@ struct OpenEndedList: View {
     
     @FocusState var isFirstElementFocused
     
+    @State private var focusedFieldId: UUID? = nil
+    
     var body: some View {
         VStack(alignment: .center) {
             ForEach($options) { $option in
@@ -30,14 +32,22 @@ struct OpenEndedList: View {
                     .background(.quinary)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .focused($isFirstElementFocused)
+                    .onSubmit {
+                    }
                 } else {
-                    TextField("Type another item here.",
-                              text: $option.contents)
-                    .multilineTextAlignment(.center)
-                    .font(.title3)
-                    .padding(.vertical, 8)
-                    .background(.quinary)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    OpenEndedListTextField(isFocused: Binding {
+                        focusedFieldId == option.id
+                    } set: { value in
+                        if value {
+                            focusedFieldId = option.id
+                        } else {
+                            focusedFieldId = nil
+                        }
+                    }, text: $option.contents) {
+                        if focusedFieldId != options.last?.id {
+                            focusedFieldId = options.last?.id
+                        }
+                    }
                 }
             }
             .onChange(of: options) { newValue in
@@ -49,6 +59,7 @@ struct OpenEndedList: View {
                 }
             }
             .onAppear {
+                focusedFieldId = options.first?.id
                 isFirstElementFocused = true
             }
         }

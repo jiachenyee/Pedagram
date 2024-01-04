@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SurveyInputView: View {
     
-    @State private var entry = Entry()
-    @State private var question = Question.studentsWorkingWithTechnology
+    @State private var entry = Observation()
+    @State private var selectedQuestion = Question.studentsWorkingWithTechnology
     
     @State private var value = 0
     
@@ -21,156 +21,214 @@ struct SurveyInputView: View {
     @FocusState var focused
     
     @Environment(\.dismiss) var dismiss
-    var completion: ((Entry) -> Void)
+    var completion: ((Observation) -> Void)
+    
+    @State private var isDismissReportAlertPresented = false
     
     var body: some View {
-        HStack {
-            ForEach(Question.allCases, id: \.rawValue) { question in
-                Button {
-                    let record: EntryRecord = {
-                        switch question.inputType {
-                        case .numeric:
-                            return EntryRecord.numeric(value)
-                        case .openEndedList:
-                            return EntryRecord.openEndedList(openEndedOptions.map({
-                                $0.contents
-                            }))
-                        case .options:
-                            return EntryRecord.options(selectedValue)
-                        case .scale:
-                            return EntryRecord.numeric(value)
-                        }
-                    }()
-                    
-                    entry[keyPath: question.path] = record
-                    
-                    withAnimation {
-                        value = 0
-                        selectedValue = ""
-                        openEndedOptions = [.init()]
-                        self.question = question
-                    }
-                } label: {
-                    Group {
-                        if question == self.question {
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 8)
-                        } else if entry[keyPath: question.path] == nil {
-                            Capsule()
-                                .stroke(lineWidth: 2)
-                                .frame(height: 8)
-                                .padding(1)
-                        } else {
-                            Capsule()
-                                .fill(Color.blue)
-                                .frame(height: 8)
-                                .opacity(0.5)
+        NavigationSplitView {
+            List {
+                ForEach(Question.allCases, id: \.title) { question in
+                    Button {
+                        save()
+                        selectedQuestion = question
+                        reset()
+                    } label: {
+                        HStack {
+                            Text(question.unformattedTitle)
+                                .foregroundStyle(question == selectedQuestion ? .white : .primary)
+                            Spacer()
+                            if entry[keyPath: question.path] != nil {
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(question == selectedQuestion ? .white : Color.accentColor)
+                            }
                         }
                     }
-                    .padding(.vertical)
+                    .padding(8)
+                    .background(question == selectedQuestion ? Color.blue : Color.clear)
+                    .clipShape(.rect(cornerRadius: 8))
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
             }
-        }
-        .padding(.horizontal)
-        
-        ScrollView {
+        } detail: {
             VStack {
-                Image(systemName: question.symbol)
-                    .frame(height: 96)
-                    .font(.system(size: 64))
-                    .foregroundStyle(.blue)
-                    .padding(.top)
-                    .accessibilityHidden(true)
+                VStack(alignment: .leading) {
+                    Text("\(Question.allCases.firstIndex(of: selectedQuestion)! + 1) of \(Question.allCases.count)")
+                        .contentTransition(.numericText())
+                    
+                    Text(try! AttributedString(markdown: selectedQuestion.title)
+                        .transformingAttributes(\.link, { transformer in
+                            print(transformer.range)
+                            if transformer.value != nil {
+                                transformer.replace(with: \.backgroundColor, value: .yellow)
+                            }
+                        })
+                    )
+                    .multilineTextAlignment(.leading)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    
+                    if let subtitle = selectedQuestion.subtitle {
+                        Text(subtitle)
+                            .multilineTextAlignment(.leading)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
                 
-                Text(try! AttributedString(markdown: question.title)
-                    .transformingAttributes(\.link, { transformer in
-                        print(transformer.range)
-                        if transformer.value != nil {
-                            transformer.replace(with: \.backgroundColor, value: .yellow)
+                ScrollView {
+                    VStack {
+                        switch selectedQuestion.inputType {
+                        case .numeric, .scale:
+                            TextField("Number",
+                                      value: $value,
+                                      format: .number)
+                            .keyboardType(.numberPad)
+                            .focused($focused)
+                            .multilineTextAlignment(.center)
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .padding(.vertical)
+                            .background(.quinary)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .onAppear {
+                                focused = true
+                            }
+                            
+                            HStack {
+                                SurveyInputQuickCompletionButton(value: $value, increment: 1)
+                                SurveyInputQuickCompletionButton(value: $value, increment: -1)
+                            }
+                            
+                            HStack {
+                                SurveyInputQuickCompletionButton(value: $value, increment: 5)
+                                SurveyInputQuickCompletionButton(value: $value, increment: -5)
+                            }
+                            HStack {
+                                SurveyInputQuickCompletionButton(value: $value, increment: 10)
+                                SurveyInputQuickCompletionButton(value: $value, increment: -10)
+                            }
+                        case .openEndedList:
+                            OpenEndedList(options: $openEndedOptions)
+                        case .options(let array):
+                            Picker("", selection: $selectedValue) {
+                                Text("No Selection")
+                                    .tag("")
+                                
+                                ForEach(array, id: \.self) { option in
+                                    Text(option.capitalized)
+                                        .tag(option)
+                                }
+                            }
                         }
-                    })
-                )
-                .multilineTextAlignment(.center)
-                .font(.title)
-                .fontWeight(.bold)
-                
-                if let subtitle = question.subtitle {
-                    Text(subtitle)
-                        .multilineTextAlignment(.center)
-                        .padding(.vertical)
+                    }
+                    .padding()
                 }
                 
-                switch question.inputType {
-                case .numeric, .scale:
-                    TextField("Number",
-                              value: $value,
-                              format: .number)
-                    .keyboardType(.numberPad)
-                    .focused($focused)
-                    .multilineTextAlignment(.center)
-                    .font(.title2)
-                    .padding(.vertical)
-                    .background(.quinary)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .onAppear {
-                        focused = true
+                HStack {
+                    if selectedQuestion != Question.allCases.first {
+                        Button {
+                            save()
+                            withAnimation {
+                                if let nextQuestion = Question(rawValue: selectedQuestion.rawValue - 1) {
+                                    reset()
+                                    selectedQuestion = nextQuestion
+                                }
+                            }
+                            
+                            if Question.allCases.last == selectedQuestion {
+                                completion(entry)
+                                dismiss()
+                            }
+                        } label: {
+                            Text("Previous")
+                                .padding(8)
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.bordered)
                     }
-                case .openEndedList:
-                    OpenEndedList(options: $openEndedOptions)
-                case .options(let array):
-                    Picker("", selection: $selectedValue) {
-                        Text("No Selection")
-                            .tag("")
+                    
+                    Button {
+                        save()
+                        withAnimation {
+                            if let nextQuestion = Question(rawValue: selectedQuestion.rawValue + 1) {
+                                reset()
+                                selectedQuestion = nextQuestion
+                            }
+                        }
                         
-                        ForEach(array, id: \.self) { option in
-                            Text(option.capitalized)
-                                .tag(option)
+                        if Question.allCases.last == selectedQuestion {
+                            completion(entry)
+                            dismiss()
                         }
+                    } label: {
+                        Text(Question.allCases.last == selectedQuestion ? "Done" : "Next")
+                            .padding(8)
+                            .frame(maxWidth: .infinity)
                     }
+                    .buttonStyle(.borderedProminent)
+                }
+                .padding(.top, 8)
+                .padding([.bottom, .horizontal])
+            }
+            .toolbar {
+                Button {
+                    isDismissReportAlertPresented = true
+                } label: {
+                    Image(systemName: "xmark")
                 }
             }
-            .padding()
+            .alert("Close Observation Record", isPresented: $isDismissReportAlertPresented) {
+                Button(role: .destructive) {
+                    dismiss()
+                } label: {
+                    Text("Close Without Saving")
+                }
+                Button(role: .cancel) {
+                    save()
+                    completion(entry)
+                    dismiss()
+                } label: {
+                    Text("Save and Close")
+                }
+            }
         }
+    }
+    
+    func save() {
+        let record: ObservationRecord = {
+            switch selectedQuestion.inputType {
+            case .numeric:
+                return ObservationRecord.numeric(value)
+            case .openEndedList:
+                return ObservationRecord.openEndedList(openEndedOptions.map({
+                    $0.contents
+                }))
+            case .options:
+                return ObservationRecord.options(selectedValue)
+            case .scale:
+                return ObservationRecord.numeric(value)
+            }
+        }()
         
-        Button {
-            let record: EntryRecord = {
-                switch question.inputType {
-                case .numeric:
-                    return EntryRecord.numeric(value)
-                case .openEndedList:
-                    return EntryRecord.openEndedList(openEndedOptions.map({
-                        $0.contents
-                    }))
-                case .options:
-                    return EntryRecord.options(selectedValue)
-                case .scale:
-                    return EntryRecord.numeric(value)
-                }
-            }()
-            
-            entry[keyPath: question.path] = record
-            
-            withAnimation {
-                if let nextQuestion = Question(rawValue: question.rawValue + 1) {
-                    value = 0
-                    selectedValue = ""
-                    openEndedOptions = [.init()]
-                    question = nextQuestion
-                }
+        entry[keyPath: selectedQuestion.path] = record
+    }
+    
+    func reset() {
+        value = 0
+        selectedValue = ""
+        openEndedOptions = [.init()]
+        
+        guard let previousValue = entry[keyPath: selectedQuestion.path] else { return }
+        switch previousValue {
+        case .numeric(let number):
+            value = number
+        case .openEndedList(let list):
+            openEndedOptions = list.map {
+                .init(contents: $0)
             }
-            
-            if Question.allCases.last == question {
-                completion(entry)
-                dismiss()
-            }
-        } label: {
-            Text(Question.allCases.last == question ? "Done" : "Next")
-                .padding(8)
-                .frame(maxWidth: .infinity)
+        case .options(let option):
+            selectedValue = option
         }
-        .buttonStyle(.borderedProminent)
-        .padding(.top, 8)
-        .padding([.bottom, .horizontal])
     }
 }

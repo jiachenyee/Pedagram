@@ -7,28 +7,28 @@
 
 import Foundation
 
-struct Entry: Identifiable, Hashable {
+struct Observation: Identifiable, Hashable, Codable {
     var id = UUID()
     
-    var studentsWorkingWithTechnology: EntryRecord?
-    var studentsDoingIndependentWork: EntryRecord?
-    var studentsDoingPairWork: EntryRecord?
-    var studentsDoingGroupWork: EntryRecord?
+    var studentsWorkingWithTechnology: ObservationRecord?
+    var studentsDoingIndependentWork: ObservationRecord?
+    var studentsDoingPairWork: ObservationRecord?
+    var studentsDoingGroupWork: ObservationRecord?
     
-    var technologyUsedByStudent: EntryRecord?
-    var howManyTimesTechnologyUsedByStudent: EntryRecord?
-    var typeOfTaskSetByTeacher: EntryRecord?
+    var technologyUsedByStudent: ObservationRecord?
+    var howManyTimesTechnologyUsedByStudent: ObservationRecord?
+    var typeOfTaskSetByTeacher: ObservationRecord?
     
-    var whatIsTheTeacherDoing: EntryRecord?
-    var technologyUsedByTeacher: EntryRecord?
-    var howManyTimesWasTechnologyUsedByTeacher: EntryRecord?
-    var teacherConfidenceInTechnology: EntryRecord?
-    var questionsPosedByTeacherToStudents: EntryRecord?
+    var whatIsTheTeacherDoing: ObservationRecord?
+    var technologyUsedByTeacher: ObservationRecord?
+    var howManyTimesWasTechnologyUsedByTeacher: ObservationRecord?
+    var teacherConfidenceInTechnology: ObservationRecord?
+    var questionsPosedByTeacherToStudents: ObservationRecord?
     
     var time: Date = .now
 }
 
-enum EntryRecord: Hashable {
+enum ObservationRecord: Hashable, Codable {
     case numeric(Int)
     case openEndedList([String])
     case options(String)
@@ -158,6 +158,64 @@ enum Question: Int, CaseIterable {
         }
     }
     
+    var unformattedTitle: String {
+        switch self {
+        case .studentsWorkingWithTechnology:
+            return "How many students are working with technology?"
+        case .studentsDoingIndependentWork:
+            return "How many students are doing Independent Work?"
+        case .studentsDoingPairWork:
+            return "How many students are doing Pair Work?"
+        case .studentsDoingGroupWork:
+            return "How many students are doing Group Work?"
+        case .technologyUsedByStudent:
+            return "What is the technology being used by students?"
+        case .howManyTimesTechnologyUsedByStudent:
+            return "How many times was each technology used by students?"
+        case .typeOfTaskSetByTeacher:
+            return "What was the type of task being set by the teacher for students?"
+        case .whatIsTheTeacherDoing:
+            return "What is the teacher doing?"
+        case .technologyUsedByTeacher:
+            return "What is the technology being used by the teacher?"
+        case .howManyTimesWasTechnologyUsedByTeacher:
+            return "How many times was each technology used by the teacher?"
+        case .teacherConfidenceInTechnology:
+            return "How confident was the teacher in the use of each technology?"
+        case .questionsPosedByTeacherToStudents:
+            return "What were the questions posed by the teacher to students?"
+        }
+    }
+    
+    var shorthandTitle: String {
+        switch self {
+        case .studentsWorkingWithTechnology:
+            return "Students working with technology"
+        case .studentsDoingIndependentWork:
+            return "Independent work"
+        case .studentsDoingPairWork:
+            return "Pair work"
+        case .studentsDoingGroupWork:
+            return "Group work"
+        case .technologyUsedByStudent:
+            return "Technology used by students"
+        case .howManyTimesTechnologyUsedByStudent:
+            return "Technology use by the students"
+        case .typeOfTaskSetByTeacher:
+            return "Type of task set by the teacher"
+        case .whatIsTheTeacherDoing:
+            return "What is the teacher doing"
+        case .technologyUsedByTeacher:
+            return "Technology used by teacher"
+        case .howManyTimesWasTechnologyUsedByTeacher:
+            return "Technology use by the teacher"
+        case .teacherConfidenceInTechnology:
+            return "Teacher confidence in technology use"
+        case .questionsPosedByTeacherToStudents:
+            return "Questions posed by the teacher"
+        }
+    }
+    
     var subtitle: String? {
         switch self {
         case .studentsWorkingWithTechnology:
@@ -187,32 +245,32 @@ enum Question: Int, CaseIterable {
         }
     }
     
-    var path: WritableKeyPath<Entry, EntryRecord?> {
+    var path: WritableKeyPath<Observation, ObservationRecord?> {
         switch self {
         case .studentsWorkingWithTechnology:
-            return \Entry.studentsWorkingWithTechnology
+            return \Observation.studentsWorkingWithTechnology
         case .studentsDoingIndependentWork:
-            return \Entry.studentsDoingIndependentWork
+            return \Observation.studentsDoingIndependentWork
         case .studentsDoingPairWork:
-            return \Entry.studentsDoingPairWork
+            return \Observation.studentsDoingPairWork
         case .studentsDoingGroupWork:
-            return \Entry.studentsDoingGroupWork
+            return \Observation.studentsDoingGroupWork
         case .technologyUsedByStudent:
-            return \Entry.technologyUsedByStudent
+            return \Observation.technologyUsedByStudent
         case .howManyTimesTechnologyUsedByStudent:
-            return \Entry.howManyTimesTechnologyUsedByStudent
+            return \Observation.howManyTimesTechnologyUsedByStudent
         case .typeOfTaskSetByTeacher:
-            return \Entry.typeOfTaskSetByTeacher
+            return \Observation.typeOfTaskSetByTeacher
         case .whatIsTheTeacherDoing:
-            return \Entry.whatIsTheTeacherDoing
+            return \Observation.whatIsTheTeacherDoing
         case .technologyUsedByTeacher:
-            return \Entry.technologyUsedByTeacher
+            return \Observation.technologyUsedByTeacher
         case .howManyTimesWasTechnologyUsedByTeacher:
-            return \Entry.howManyTimesWasTechnologyUsedByTeacher
+            return \Observation.howManyTimesWasTechnologyUsedByTeacher
         case .teacherConfidenceInTechnology:
-            return \Entry.teacherConfidenceInTechnology
+            return \Observation.teacherConfidenceInTechnology
         case .questionsPosedByTeacherToStudents:
-            return \Entry.questionsPosedByTeacherToStudents
+            return \Observation.questionsPosedByTeacherToStudents
         }
     }
 }

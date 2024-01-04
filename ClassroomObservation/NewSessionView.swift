@@ -1,5 +1,5 @@
 //
-//  NewObservationView.swift
+//  NewSessionView.swift
 //  ClassroomObservation
 //
 //  Created by Jia Chen Yee on 28/9/23.
@@ -7,47 +7,47 @@
 
 import SwiftUI
 
-struct NewObservationView: View {
+struct NewSessionView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    @State private var observation = Observation(class: "",
-                                                 grade: "",
-                                                 enrolment: 30,
-                                                 lessonTime: .now,
-                                                 duration: 0,
-                                                 entries: [])
+    @State private var session = Session(class: "",
+                                         grade: "",
+                                         enrolment: 30,
+                                         lessonTime: .now,
+                                         duration: 0,
+                                         observations: [])
     
-    var completion: ((Observation) -> Void)
+    var completion: ((Session) -> Void)
     
     var body: some View {
         NavigationStack {
             Form {
                 Section("Class") {
-                    TextField("Class", text: $observation.class)
+                    TextField("Class", text: $session.class)
                 }
                 Section("Grade") {
-                    TextField("Grade", text: $observation.grade)
+                    TextField("Grade", text: $session.grade)
                 }
                 
                 Section("Enrolment") {
                     Stepper {
-                        Text("\(observation.enrolment)")
+                        Text("\(session.enrolment)")
                     } onIncrement: {
-                        observation.enrolment += 1
+                        session.enrolment += 1
                     } onDecrement: {
-                        if observation.enrolment > 0 {
-                            observation.enrolment -= 1
+                        if session.enrolment > 0 {
+                            session.enrolment -= 1
                         }
                     }
                 }
                 
                 Section("Date/Time") {
-                    DatePicker("Lesson Time", selection: $observation.lessonTime, displayedComponents: [.date, .hourAndMinute])
+                    DatePicker("Lesson Time", selection: $session.lessonTime, displayedComponents: [.date, .hourAndMinute])
                 }
                 
-                Section("Date/Time") {
-                    Picker("Duration", selection: $observation.duration) {
+                Section("Class Duration") {
+                    Picker("Duration", selection: $session.duration) {
                         ForEach([15, 30, 45, 60, 75, 90, 105, 120], id: \.self) { duration in
                             let hours = duration / 60
                             let minutes = duration % 60
@@ -68,11 +68,11 @@ struct NewObservationView: View {
                 Button("Create") {
                     dismiss()
                     withAnimation {
-                        completion(observation)
+                        completion(session)
                     }
                 }
             }
-            .navigationTitle("New Observation")
+            .navigationTitle("New Session")
         }
     }
 }

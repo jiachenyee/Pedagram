@@ -6,214 +6,70 @@
 //
 
 import SwiftUI
+import Charts
+
+struct StudentsEngagementReportData: Identifiable {
+    
+    var id: String
+    
+    var question: Question
+    var time: Date
+    var value: Int?
+}
 
 struct ReportStudentsEngagementView: View {
     
     @State private var selectedAnalysisMethod = StatisticsMethods.mean
     
-    var observation: Observation
+    let targetQuestions: [Question] = [.studentsDoingIndependentWork, .studentsDoingPairWork, .studentsDoingGroupWork]
+    
+    var session: Session
     
     var body: some View {
         VStack(alignment: .leading) {
-            GeometryReader { geometry in
-                HStack {
-                    VStack(alignment: .trailing) {
-                        Text("\(observation.enrolment)")
-                            .frame(height: 8)
-                        ForEach(0..<5) { index in
-                            Spacer()
-                            Text("\(observation.enrolment / 5 * (4 - index))")
-                                .frame(height: 8)
-                        }
-                    }
-                    .monospaced()
-                    .font(.caption)
-                    .padding(.vertical, -4)
-                    
-                    GeometryReader { geometry in
-                        let yUnit = geometry.size.height / CGFloat(observation.enrolment)
-                        
-                        let startTime = observation.entries.first!.time
-                        
-                        let distance = abs(observation.entries.last!.time.timeIntervalSince(startTime))
-                        
-                        let xUnit = geometry.size.width / distance
-                        
-                        Path { path in
-                            var previousValue: Int?
-                            
-                            for entry in observation.entries {
-                                let currentValue = entry.studentsWorkingWithTechnology?.numericValue
-                                
-                                if let currentValue {
-                                    if previousValue == nil {
-                                        path.move(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                              y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    } else {
-                                        path.addLine(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                                 y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    }
-                                }
-                                
-                                previousValue = currentValue
-                            }
-                        }
-                        .stroke(.red, lineWidth: 3)
-                        .shadow(color: .red, radius: 10)
-                        
-                        Path { path in
-                            var previousValue: Int?
-                            
-                            for entry in observation.entries {
-                                let currentValue = entry.studentsDoingIndependentWork?.numericValue
-                                
-                                if let currentValue {
-                                    if previousValue == nil {
-                                        path.move(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                              y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    } else {
-                                        path.addLine(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                                 y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    }
-                                }
-                                
-                                previousValue = currentValue
-                            }
-                        }
-                        .stroke(.blue, lineWidth: 3)
-                        .shadow(color: .blue, radius: 10)
-                        
-                        Path { path in
-                            var previousValue: Int?
-                            
-                            for entry in observation.entries {
-                                let currentValue = entry.studentsDoingPairWork?.numericValue
-                                
-                                if let currentValue {
-                                    if previousValue == nil {
-                                        path.move(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                              y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    } else {
-                                        path.addLine(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                                 y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    }
-                                }
-                                
-                                previousValue = currentValue
-                            }
-                        }
-                        .stroke(.teal, lineWidth: 3)
-                        .shadow(color: .teal, radius: 10)
-                        
-                        Path { path in
-                            var previousValue: Int?
-                            
-                            for entry in observation.entries {
-                                let currentValue = entry.studentsDoingGroupWork?.numericValue
-                                
-                                if let currentValue {
-                                    if previousValue == nil {
-                                        path.move(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                              y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    } else {
-                                        path.addLine(to: CGPoint(x: xUnit * abs(startTime.timeIntervalSince(entry.time)),
-                                                                 y: geometry.size.height - yUnit * CGFloat(currentValue)))
-                                    }
-                                }
-                                
-                                previousValue = currentValue
-                            }
-                        }
-                        .stroke(.green, lineWidth: 3)
-                        .shadow(color: .green, radius: 10)
-                        
-                        VStack(alignment: .trailing) {
-                            Divider()
-                            ForEach(0..<5) { index in
-                                Spacer()
-                                Divider()
-                            }
-                        }
-                    }
-                }
-            }
-            .aspectRatio(1.5, contentMode: .fit)
-            .padding(.bottom)
-        }
-        .padding(.vertical)
-        
-        Picker(selection: $selectedAnalysisMethod) {
-            ForEach(StatisticsMethods.allCases, id: \.self) { statisticMethod in
-                Text(statisticMethod.description)
-            }
-        } label: {
-            Text("Statistics")
-        }
-        .pickerStyle(.segmented)
-        .listRowSeparator(.hidden)
-        
-            HStack {
-                Image(systemName: "square.fill")
-                    .foregroundStyle(.red)
-                Text("Students Working With Technology")
-                Spacer()
-                
-                let values = observation.entries.compactMap {
-                    $0.studentsWorkingWithTechnology?.numericValue
-                }
-                let output = selectedAnalysisMethod.perform(on: values) ?? 0
-                
-                Text("\(output)")
-                    .foregroundStyle(.secondary)
-                    .monospaced()
-                    .contentTransition(.numericText())
-            }
-            .animation(.easeInOut, value: selectedAnalysisMethod)
+            Text("Student Engagement")
+                .font(.headline)
+                .foregroundStyle(.secondary)
             
-            Text("Students doing…")
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .listRowSeparator(.hidden, edges: .bottom)
-        
-            HStack {
-                Image(systemName: "square.fill")
-                    .foregroundStyle(.green)
-                Text("Group Work")
-                Spacer()
-                let values = observation.entries.compactMap {
-                    $0.studentsDoingGroupWork?.numericValue
+            let reportData = session.observations.flatMap { observation in
+                targetQuestions.map { question in
+                    StudentsEngagementReportData(id: observation.id.uuidString + question.unformattedTitle,
+                                                 question: question, time: observation.time,
+                                                 value: observation[keyPath: question.path]?.numericValue)
                 }
-                let output = selectedAnalysisMethod.perform(on: values) ?? 0
-                
-                Text("\(output)")
-                    .foregroundStyle(.secondary)
-                    .monospaced()
-                    .contentTransition(.numericText())
             }
-            .animation(.easeInOut, value: selectedAnalysisMethod)
+            
+            Chart(reportData) { datum in
+                LineMark(
+                    x: .value("Time", datum.time),
+                    y: .value("Number of Students", datum.value ?? 0)
+                )
+                .foregroundStyle(by: .value("Category", datum.question.shorthandTitle))
+            }
+            .chartXAxis(.hidden)
+            .chartLegend(.hidden)
+            .frame(height: 200)
             
             HStack {
-                Image(systemName: "square.fill")
-                    .foregroundStyle(.teal)
-                Text("Pair Work")
-                Spacer()
-                let values = observation.entries.compactMap {
-                    $0.studentsDoingPairWork?.numericValue
-                }
-                let output = selectedAnalysisMethod.perform(on: values) ?? 0
-                
-                Text("\(output)")
+                Text("Students doing…")
+                    .font(.subheadline)
                     .foregroundStyle(.secondary)
-                    .monospaced()
-                    .contentTransition(.numericText())
+                Spacer()
+                Picker(selection: $selectedAnalysisMethod) {
+                    ForEach(StatisticsMethods.allCases, id: \.self) { statisticMethod in
+                        Text(statisticMethod.description)
+                    }
+                } label: {
+                    EmptyView()
+                }
             }
-            .animation(.easeInOut, value: selectedAnalysisMethod)
             
             HStack {
                 Image(systemName: "square.fill")
                     .foregroundStyle(.blue)
                 Text("Independent Work")
                 Spacer()
-                let values = observation.entries.compactMap {
+                let values = session.observations.compactMap {
                     $0.studentsDoingIndependentWork?.numericValue
                 }
                 let output = selectedAnalysisMethod.perform(on: values) ?? 0
@@ -224,10 +80,47 @@ struct ReportStudentsEngagementView: View {
                     .contentTransition(.numericText())
             }
             .animation(.easeInOut, value: selectedAnalysisMethod)
+            
+            HStack {
+                Image(systemName: "square.fill")
+                    .foregroundStyle(.green)
+                Text("Pair Work")
+                Spacer()
+                let values = session.observations.compactMap {
+                    $0.studentsDoingPairWork?.numericValue
+                }
+                let output = selectedAnalysisMethod.perform(on: values) ?? 0
+                
+                Text("\(output)")
+                    .foregroundStyle(.secondary)
+                    .monospaced()
+                    .contentTransition(.numericText())
+            }
+            .animation(.easeInOut, value: selectedAnalysisMethod)
+            HStack {
+                Image(systemName: "square.fill")
+                    .foregroundStyle(.orange)
+                Text("Group Work")
+                Spacer()
+                let values = session.observations.compactMap {
+                    $0.studentsDoingGroupWork?.numericValue
+                }
+                let output = selectedAnalysisMethod.perform(on: values) ?? 0
+                
+                Text("\(output)")
+                    .foregroundStyle(.secondary)
+                    .monospaced()
+                    .contentTransition(.numericText())
+            }
+            .animation(.easeInOut, value: selectedAnalysisMethod)
+        }
+        .padding()
+        .background(Material.ultraThick)
+        .clipShape(.rect(cornerRadius: 8))
     }
 }
 
-enum StatisticsMethods: CaseIterable, Hashable {
+enum StatisticsMethods: Int, CaseIterable, Hashable {
     case mean
     case median
     case mode
@@ -236,7 +129,7 @@ enum StatisticsMethods: CaseIterable, Hashable {
     var description: String {
         switch self {
         case .mean:
-            return "Mean"
+            return "Average"
         case .median:
             return "Median"
         case .mode:
