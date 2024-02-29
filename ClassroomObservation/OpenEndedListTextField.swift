@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OpenEndedListTextField: View {
     
+    var isFirstItem = false
+    
     @FocusState var isFieldFocused
     
     @Binding var isFocused: Bool
@@ -17,7 +19,7 @@ struct OpenEndedListTextField: View {
     var onSubmit: () -> Void
     
     var body: some View {
-        TextField("Type another item here.",
+        TextField(isFirstItem ? "Type an item here." : "Type another item here.",
                   text: $text)
         .multilineTextAlignment(.center)
         .font(.title3)

@@ -140,17 +140,17 @@ enum Question: Int, CaseIterable {
         case .studentsDoingGroupWork:
             return "How many students are doing [Group Work](https://example.com)?"
         case .technologyUsedByStudent:
-            return "What is the technology being used by students?"
+            return "What is the technology being used [by students](https://example.com)?"
         case .howManyTimesTechnologyUsedByStudent:
-            return "How many times was each technology used by students?"
+            return "How many times was each technology used [by students](https://example.com)?"
         case .typeOfTaskSetByTeacher:
             return "What was the type of task being set by the teacher for students?"
         case .whatIsTheTeacherDoing:
-            return "What is the teacher doing?"
+            return "What is [the teacher](https://example.com) doing?"
         case .technologyUsedByTeacher:
-            return "What is the technology being used by the teacher?"
+            return "What is the technology being used [by the teacher](https://example.com)?"
         case .howManyTimesWasTechnologyUsedByTeacher:
-            return "How many times was each technology used by the teacher?"
+            return "How many times was each technology used [by the teacher](https://example.com)?"
         case .teacherConfidenceInTechnology:
             return "How confident was the teacher in the use of each technology?"
         case .questionsPosedByTeacherToStudents:

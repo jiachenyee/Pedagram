@@ -47,17 +47,20 @@ struct NewSessionView: View {
                 }
                 
                 Section("Class Duration") {
-                    Picker("Duration", selection: $session.duration) {
+                    Picker("Duration", selection: $session.durationMinutes) {
                         ForEach([15, 30, 45, 60, 75, 90, 105, 120], id: \.self) { duration in
                             let hours = duration / 60
                             let minutes = duration % 60
                             
                             if hours == 0 {
                                 Text("\(minutes) minutes")
+                                    .tag(duration)
                             } else if minutes == 0 {
                                 Text("\(hours) hours")
+                                    .tag(duration)
                             } else {
                                 Text("\(hours) hours \(minutes) minutes")
+                                    .tag(duration)
                             }
                         }
                         

@@ -17,6 +17,9 @@
 		3280D5E72AC35CC400B67785 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D5E62AC35CC400B67785 /* ReportView.swift */; };
 		3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */; };
 		3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D62A2AC549FF00B67785 /* NewSessionView.swift */; };
+		329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */; };
+		329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6D2B910E320054DAEA /* ChecklistPickerView.swift */; };
+		329CAF702B910FFD0054DAEA /* ScaleInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6F2B910FFD0054DAEA /* ScaleInputView.swift */; };
 		329E50902AE77E2900294617 /* Forever in Frameworks */ = {isa = PBXBuildFile; productRef = 329E508F2AE77E2900294617 /* Forever */; };
 		32ADD7232ABD620E009E947A /* ClassroomObservationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADD7222ABD620E009E947A /* ClassroomObservationApp.swift */; };
 		32ADD7252ABD620E009E947A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADD7242ABD620E009E947A /* ContentView.swift */; };
@@ -37,6 +40,9 @@
 		3280D5E62AC35CC400B67785 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportStudentsEngagementView.swift; sourceTree = "<group>"; };
 		3280D62A2AC549FF00B67785 /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialTechnology.swift; sourceTree = "<group>"; };
+		329CAF6D2B910E320054DAEA /* ChecklistPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistPickerView.swift; sourceTree = "<group>"; };
+		329CAF6F2B910FFD0054DAEA /* ScaleInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleInputView.swift; sourceTree = "<group>"; };
 		32ADD71F2ABD620E009E947A /* ClassroomObservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassroomObservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32ADD7222ABD620E009E947A /* ClassroomObservationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassroomObservationApp.swift; sourceTree = "<group>"; };
 		32ADD7242ABD620E009E947A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +96,10 @@
 				32ADD7332ABD6A80009E947A /* SurveyInputView.swift */,
 				326074A42B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift */,
 				324FB2452ABE71B50088A9C6 /* OpenEndedList.swift */,
+				329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */,
 				326074A22B2F7679009355E8 /* OpenEndedListTextField.swift */,
+				329CAF6D2B910E320054DAEA /* ChecklistPickerView.swift */,
+				329CAF6F2B910FFD0054DAEA /* ScaleInputView.swift */,
 				32ADD7312ABD6640009E947A /* Question.swift */,
 				32ADD7262ABD620F009E947A /* Assets.xcassets */,
 				32ADD7282ABD620F009E947A /* ClassroomObservation.entitlements */,
@@ -183,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329CAF702B910FFD0054DAEA /* ScaleInputView.swift in Sources */,
 				32ADD7322ABD6640009E947A /* Question.swift in Sources */,
 				3280D5E32AC3063300B67785 /* SessionView.swift in Sources */,
 				326074A52B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift in Sources */,
@@ -190,12 +200,14 @@
 				323DD6892B31EE2600A242E3 /* ReportCardView.swift in Sources */,
 				32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */,
 				3280D5E52AC3063E00B67785 /* Session.swift in Sources */,
+				329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */,
 				323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */,
 				326074A32B2F7679009355E8 /* OpenEndedListTextField.swift in Sources */,
 				32ADD7252ABD620E009E947A /* ContentView.swift in Sources */,
 				3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */,
 				32ADD7232ABD620E009E947A /* ClassroomObservationApp.swift in Sources */,
 				3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */,
+				329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */,
 				324FB2462ABE71B50088A9C6 /* OpenEndedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

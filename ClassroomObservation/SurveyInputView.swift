@@ -58,7 +58,6 @@ struct SurveyInputView: View {
                     
                     Text(try! AttributedString(markdown: selectedQuestion.title)
                         .transformingAttributes(\.link, { transformer in
-                            print(transformer.range)
                             if transformer.value != nil {
                                 transformer.replace(with: \.backgroundColor, value: .yellow)
                             }
@@ -79,7 +78,7 @@ struct SurveyInputView: View {
                 ScrollView {
                     VStack {
                         switch selectedQuestion.inputType {
-                        case .numeric, .scale:
+                        case .numeric:
                             TextField("Number",
                                       value: $value,
                                       format: .number)
@@ -109,17 +108,16 @@ struct SurveyInputView: View {
                                 SurveyInputQuickCompletionButton(value: $value, increment: -10)
                             }
                         case .openEndedList:
-                            OpenEndedList(options: $openEndedOptions)
+                            OpenEndedList(shouldDisplayTechnologiesAutocomplete: selectedQuestion == .technologyUsedByStudent || selectedQuestion == .technologyUsedByTeacher,
+                                          options: $openEndedOptions)
                         case .options(let array):
-                            Picker("", selection: $selectedValue) {
-                                Text("No Selection")
-                                    .tag("")
-                                
-                                ForEach(array, id: \.self) { option in
-                                    Text(option.capitalized)
-                                        .tag(option)
-                                }
-                            }
+                            ChecklistPickerView(selectedValue: $selectedValue, options: array)
+                        case .scale(let range):
+                            ScaleInputView(value: Binding(get: {
+                                Double(value)
+                            }, set: { newValue in
+                                value = Int(round(newValue))
+                            }))
                         }
                     }
                     .padding()

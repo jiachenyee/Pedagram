@@ -15,6 +15,15 @@ struct Session: Identifiable, Hashable, Codable {
     var lessonTime: Date
     var duration: TimeInterval
     
+    var durationMinutes: Int {
+        get {
+            Int(duration / 60)
+        }
+        set {
+            duration = TimeInterval(newValue) * 60
+        }
+    }
+    
     var observations: [Observation]
     var sortedObservations: [Observation] {
         observations.sorted {
