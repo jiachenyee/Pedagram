@@ -12,7 +12,7 @@ struct NewSessionView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var session = Session(class: "",
-                                         grade: "",
+                                         grade: "1",
                                          enrolment: 30,
                                          lessonTime: .now,
                                          duration: 0,
@@ -25,9 +25,13 @@ struct NewSessionView: View {
             Form {
                 Section("Class") {
                     TextField("Class", text: $session.class)
-                }
-                Section("Grade") {
-                    TextField("Grade", text: $session.grade)
+                    
+                    Picker("Grade", selection: $session.grade) {
+                        ForEach(1..<7) { value in
+                            Text("\(value)")
+                                .tag("\(value)")
+                        }
+                    }
                 }
                 
                 Section("Enrolment") {
