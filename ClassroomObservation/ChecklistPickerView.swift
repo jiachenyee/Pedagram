@@ -10,18 +10,25 @@ import SwiftUI
 struct ChecklistPickerView: View {
     
     @Binding var selectedValue: String
-    var options: [String]
+    var options: [ChecklistOption]
     
     var body: some View {
         VStack(alignment: .leading) {
-            ForEach(options, id: \.self) { option in
+            ForEach(options) { option in
                 Button {
-                    selectedValue = option
+                    selectedValue = option.title
                 } label: {
                     HStack {
-                        Image(systemName: selectedValue == option ? "checkmark.circle.fill" : "circle")
-                        Text(option.capitalized)
-                            .foregroundStyle(Color(uiColor: .label))
+                        Image(systemName: selectedValue == option.title ? "checkmark.circle.fill" : "circle")
+                        VStack(alignment: .leading) {
+                            Text(option.title.capitalized)
+                            if let description = option.description {
+                                Text(description)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        .multilineTextAlignment(.leading)
+                        .foregroundStyle(Color(uiColor: .label))
                         Spacer()
                     }
                     .font(.title3)
@@ -33,4 +40,10 @@ struct ChecklistPickerView: View {
             }
         }
     }
+}
+
+struct ChecklistOption: Hashable, Identifiable {
+    var id: String { title }
+    var title: String
+    var description: String?
 }

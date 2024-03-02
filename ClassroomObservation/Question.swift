@@ -115,9 +115,17 @@ enum Question: Int, CaseIterable {
         case .howManyTimesTechnologyUsedByStudent:
             return .numeric
         case .typeOfTaskSetByTeacher:
-            return .options(["active", "collaborative", "constructive", "authentic", "goal directed"])
+            return .options([
+                ChecklistOption(title: "active", description: "Students are engaged in using technology as a tool rather than passively receiving information from the technology."),
+                ChecklistOption(title: "collaborative", description: "Students use technology tools to collaborate with others rather than working individually at all times."),
+                ChecklistOption(title: "constructive", description: "Students use technology tools to connect new information to their prior knowledge rather than to passively receive information."),
+                ChecklistOption(title: "authentic", description: "Students use technology tools to link learning activities to the world beyond the instructional setting rather than working on decontextualized assignments."),
+                ChecklistOption(title: "goal directed", description: "Students use technology tools to set goals, plan activities, monitor progress, and evaluate results rather than simply completing assignments without reflection.")
+            ])
         case .whatIsTheTeacherDoing:
-            return .options(["administration", "whole class instruction", "interacting with students"])
+            return .options(["administration", "whole class instruction", "interacting with students"].map({
+                ChecklistOption(title: $0)
+            }))
         case .technologyUsedByTeacher:
             return .openEndedList
         case .howManyTimesWasTechnologyUsedByTeacher:
@@ -278,6 +286,6 @@ enum Question: Int, CaseIterable {
 enum InputType {
     case numeric
     case openEndedList
-    case options([String])
+    case options([ChecklistOption])
     case scale(ClosedRange<Int>)
 }
