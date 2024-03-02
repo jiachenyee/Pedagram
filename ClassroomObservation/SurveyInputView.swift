@@ -182,12 +182,18 @@ struct SurveyInputView: View {
                 } label: {
                     Text("Close Without Saving")
                 }
-                Button(role: .cancel) {
+                
+                Button {
                     save()
                     completion(entry)
                     dismiss()
                 } label: {
                     Text("Save and Close")
+                }
+                
+                Button(role: .cancel) {
+                } label: {
+                    Text("Cancel")
                 }
             }
         }

@@ -29,6 +29,8 @@ struct PotentialTechnology: Identifiable {
         PotentialTechnology(name: "Safari", developer: "Apple"),
         PotentialTechnology(name: "Maps", developer: "Apple"),
         PotentialTechnology(name: "Freeform", developer: "Apple"),
+        PotentialTechnology(name: "AirPlay", developer: "Apple"),
+        PotentialTechnology(name: "Apple Sports", developer: "Apple"),
         
         PotentialTechnology(name: "iPad", developer: "Apple"),
         PotentialTechnology(name: "Mac", developer: "Apple"),
