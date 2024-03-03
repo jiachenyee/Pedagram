@@ -37,26 +37,26 @@ struct SessionView: View {
                     Button {
                         isNewEntryPresented.toggle()
                     } label: {
-                        Label("Create New Record", systemImage: "plus")
+                        Label("Create New Observation", systemImage: "plus")
                     }
                 } else {
                     Button {
                         isNewEntryPresented.toggle()
                     } label: {
-                        Label("Create New Record", systemImage: "plus")
+                        Label("Create New Observation", systemImage: "plus")
                     }
                 }
             } footer: {
-                Text("Create a new record every 15 minutes to get consistent results!")
+                Text("Create a new observation every 15 minutes to get consistent results!")
             }
             
             if !session.observations.isEmpty {
                 Section {
                     ForEach($session.observations, editActions: .delete) { $entry in
-                        Text("\(entry.time.formatted(date: .omitted, time: .shortened)) Record")
+                        Text("\(entry.time.formatted(date: .omitted, time: .shortened)) Observation")
                     }
                 } header: {
-                    Text("Records")
+                    Text("Observations")
                 }
                 
                 Section {
