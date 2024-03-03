@@ -50,7 +50,12 @@ struct ContentView: View {
                 NavigationLink {
                     SessionView(session: $session)
                 } label: {
-                    Text(session.class)
+                    VStack(alignment: .leading) {
+                        Text(session.class)
+                        Text(session.lessonTime.formatted(date: .abbreviated, time: .shortened))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
                 }
             }
             .overlay {
