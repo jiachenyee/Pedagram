@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScaleInputView: View {
     
-    var range: ClosedRange<Double> = 1...10
+    var range: ClosedRange<Double> = 1...5
     
     @State private var highlightedNumber = 5
     
@@ -22,7 +22,7 @@ struct ScaleInputView: View {
                     .padding(.bottom, 4)
                 VStack {
                     HStack(alignment: .bottom) {
-                        ForEach(1..<11) { value in
+                        ForEach(1..<6) { value in
                             if value != 1 {
                                 Spacer()
                             }
@@ -31,7 +31,7 @@ struct ScaleInputView: View {
                                 .font(highlightedNumber == value ? .body : .caption)
                                 .fontWeight(highlightedNumber == value ? .bold : .regular)
                             
-                            if value != 10 {
+                            if value != 5 {
                                 Spacer()
                             }
                         }
@@ -53,7 +53,7 @@ struct ScaleInputView: View {
             }
             .onAppear {
                 if value == 0 {
-                    value = 5
+                    value = 3
                 }
                 highlightedNumber = Int(round(value))
             }

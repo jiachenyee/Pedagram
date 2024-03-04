@@ -15,6 +15,9 @@ struct SurveyInputView: View {
     @State private var value = 0
     
     @State private var selectedValue = ""
+    
+    @State private var dictionaryValue: [String: Int] = [:]
+    
     @State private var openEndedOptions: [OpenEndedListOption] = [.init()]
     
     @State var isStaticText = true
@@ -118,6 +121,9 @@ struct SurveyInputView: View {
                             }, set: { newValue in
                                 value = Int(round(newValue))
                             }))
+                        case .dict:
+                            ListOfScaleDictionarySurveyInput(values: entry.technologyUsedByStudent?.stringArrayValue ?? [],
+                                                             dictionary: $dictionaryValue)
                         }
                     }
                     .padding()
@@ -212,6 +218,8 @@ struct SurveyInputView: View {
                 return ObservationRecord.options(selectedValue)
             case .scale:
                 return ObservationRecord.numeric(value)
+            case .dict:
+                return ObservationRecord.dict(dictionaryValue)
             }
         }()
         
@@ -233,6 +241,8 @@ struct SurveyInputView: View {
             }
         case .options(let option):
             selectedValue = option
+        case .dict(let option):
+            dictionaryValue = option
         }
     }
 }

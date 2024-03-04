@@ -27,6 +27,8 @@
 		32ADD72B2ABD620F009E947A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32ADD72A2ABD620F009E947A /* Preview Assets.xcassets */; };
 		32ADD7322ABD6640009E947A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADD7312ABD6640009E947A /* Question.swift */; };
 		32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADD7332ABD6A80009E947A /* SurveyInputView.swift */; };
+		32E4CF342B9545C5006F4C8D /* ObservationRecordPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */; };
+		32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		32ADD72A2ABD620F009E947A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32ADD7312ABD6640009E947A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		32ADD7332ABD6A80009E947A /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
+		32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationRecordPreviewView.swift; sourceTree = "<group>"; };
+		32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfScaleDictionarySurveyInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +95,11 @@
 				3280D5E22AC3063300B67785 /* SessionView.swift */,
 				3280D5E62AC35CC400B67785 /* ReportView.swift */,
 				323DD68A2B31FE8F00A242E3 /* ReportAggregateList.swift */,
+				32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */,
 				323DD6882B31EE2600A242E3 /* ReportCardView.swift */,
 				3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */,
 				32ADD7332ABD6A80009E947A /* SurveyInputView.swift */,
+				32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */,
 				326074A42B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift */,
 				324FB2452ABE71B50088A9C6 /* OpenEndedList.swift */,
 				329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */,
@@ -201,10 +207,12 @@
 				32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */,
 				3280D5E52AC3063E00B67785 /* Session.swift in Sources */,
 				329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */,
+				32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */,
 				323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */,
 				326074A32B2F7679009355E8 /* OpenEndedListTextField.swift in Sources */,
 				32ADD7252ABD620E009E947A /* ContentView.swift in Sources */,
 				3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */,
+				32E4CF342B9545C5006F4C8D /* ObservationRecordPreviewView.swift in Sources */,
 				32ADD7232ABD620E009E947A /* ClassroomObservationApp.swift in Sources */,
 				3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */,
 				329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */,
@@ -336,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -376,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;

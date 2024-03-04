@@ -41,15 +41,16 @@ struct ReportView: View {
                         .clipShape(.rect(cornerRadius: 8))
                     
                     HStack {
-                        VStack(spacing: 16) {
-                            ReportCardView(question: .howManyTimesTechnologyUsedByStudent, session: session)
-                            
-                            ReportAggregateList(session: session, question: .technologyUsedByStudent)
-                            Spacer()
-                        }
-                        .padding()
-                        .background(Material.ultraThick)
-                        .clipShape(.rect(cornerRadius: 8))
+                        #warning("incompete implementation")
+//                        VStack(spacing: 16) {
+//                            ReportCardView(question: .howConfidentWereStudentsInTheUseOfEachTechnology, session: session)
+//                            
+//                            ReportAggregateList(session: session, question: .technologyUsedByStudent)
+//                            Spacer()
+//                        }
+//                        .padding()
+//                        .background(Material.ultraThick)
+//                        .clipShape(.rect(cornerRadius: 8))
                         
                         VStack(spacing: 16) {
                             ReportCardView(question: .howManyTimesWasTechnologyUsedByTeacher, session: session)

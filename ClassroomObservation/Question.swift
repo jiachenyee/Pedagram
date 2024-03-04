@@ -16,7 +16,7 @@ struct Observation: Identifiable, Hashable, Codable {
     var studentsDoingGroupWork: ObservationRecord?
     
     var technologyUsedByStudent: ObservationRecord?
-    var howManyTimesTechnologyUsedByStudent: ObservationRecord?
+    var howConfidentWereStudentsInTheUseOfEachTechnology: ObservationRecord?
     var typeOfTaskSetByTeacher: ObservationRecord?
     
     var whatIsTheTeacherDoing: ObservationRecord?
@@ -32,6 +32,8 @@ enum ObservationRecord: Hashable, Codable {
     case numeric(Int)
     case openEndedList([String])
     case options(String)
+    
+    case dict([String: Int])
     
     var numericValue: Int? {
         switch self {
@@ -53,6 +55,26 @@ enum ObservationRecord: Hashable, Codable {
         default: return nil
         }
     }
+    
+    var dictValue: [String: Int]? {
+        switch self {
+        case .dict(let value): return value
+        default: return nil
+        }
+    }
+    
+    var value: String {
+        switch self {
+        case .numeric(let value): return "\(value)"
+        case .openEndedList(let value): return value.joined(separator: ", ")
+        case .options(let value): return value
+        case .dict(let value):
+            return value.map { (key, count) in
+                "\(key) used \(count)"
+            }
+            .joined(separator: "\n")
+        }
+    }
 }
 
 enum Question: Int, CaseIterable {
@@ -62,7 +84,7 @@ enum Question: Int, CaseIterable {
     case studentsDoingGroupWork
     
     case technologyUsedByStudent
-    case howManyTimesTechnologyUsedByStudent
+    case howConfidentWereStudentsInTheUseOfEachTechnology
     case typeOfTaskSetByTeacher
     
     case whatIsTheTeacherDoing
@@ -83,7 +105,7 @@ enum Question: Int, CaseIterable {
             return "person.3"
         case .technologyUsedByStudent:
             return "macbook.and.ipad"
-        case .howManyTimesTechnologyUsedByStudent:
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
             return "number"
         case .typeOfTaskSetByTeacher:
             return "list.number"
@@ -112,8 +134,8 @@ enum Question: Int, CaseIterable {
             return .numeric
         case .technologyUsedByStudent:
             return .openEndedList
-        case .howManyTimesTechnologyUsedByStudent:
-            return .numeric
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
+            return .dict
         case .typeOfTaskSetByTeacher:
             return .options([
                 ChecklistOption(title: "active", description: "Students are engaged in using technology as a tool rather than passively receiving information from the technology."),
@@ -149,8 +171,8 @@ enum Question: Int, CaseIterable {
             return "How many students are doing [Group Work](https://example.com)?"
         case .technologyUsedByStudent:
             return "What is the technology being used [by students](https://example.com)?"
-        case .howManyTimesTechnologyUsedByStudent:
-            return "How many times was each technology used [by students](https://example.com)?"
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
+            return "How confident were the students in the use of each technology used?"
         case .typeOfTaskSetByTeacher:
             return "What was the type of task being set by the teacher for students?"
         case .whatIsTheTeacherDoing:
@@ -178,7 +200,7 @@ enum Question: Int, CaseIterable {
             return "How many students are doing Group Work?"
         case .technologyUsedByStudent:
             return "What is the technology being used by students?"
-        case .howManyTimesTechnologyUsedByStudent:
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
             return "How many times was each technology used by students?"
         case .typeOfTaskSetByTeacher:
             return "What was the type of task being set by the teacher for students?"
@@ -207,8 +229,8 @@ enum Question: Int, CaseIterable {
             return "Group work"
         case .technologyUsedByStudent:
             return "Technology used by students"
-        case .howManyTimesTechnologyUsedByStudent:
-            return "Technology use by the students"
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
+            return "Student confidence in technology"
         case .typeOfTaskSetByTeacher:
             return "Type of task set by the teacher"
         case .whatIsTheTeacherDoing:
@@ -236,8 +258,8 @@ enum Question: Int, CaseIterable {
             return nil
         case .technologyUsedByStudent:
             return "List the hardware as well as the software application being used"
-        case .howManyTimesTechnologyUsedByStudent:
-            return nil
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
+            return "On a scale of 1 to 5 with 1 being unconfident and 5 being highly confident"
         case .typeOfTaskSetByTeacher:
             return nil
         case .whatIsTheTeacherDoing:
@@ -247,7 +269,7 @@ enum Question: Int, CaseIterable {
         case .howManyTimesWasTechnologyUsedByTeacher:
             return nil
         case .teacherConfidenceInTechnology:
-            return "On a scale of 1 to 10 with 1 being unconfident and 10 being highly confident"
+            return "On a scale of 1 to 5 with 1 being unconfident and 5 being highly confident"
         case .questionsPosedByTeacherToStudents:
             return "List down the questions posed (if any)"
         }
@@ -265,8 +287,8 @@ enum Question: Int, CaseIterable {
             return \Observation.studentsDoingGroupWork
         case .technologyUsedByStudent:
             return \Observation.technologyUsedByStudent
-        case .howManyTimesTechnologyUsedByStudent:
-            return \Observation.howManyTimesTechnologyUsedByStudent
+        case .howConfidentWereStudentsInTheUseOfEachTechnology:
+            return \Observation.howConfidentWereStudentsInTheUseOfEachTechnology
         case .typeOfTaskSetByTeacher:
             return \Observation.typeOfTaskSetByTeacher
         case .whatIsTheTeacherDoing:
@@ -288,4 +310,5 @@ enum InputType {
     case openEndedList
     case options([ChecklistOption])
     case scale(ClosedRange<Int>)
+    case dict
 }
