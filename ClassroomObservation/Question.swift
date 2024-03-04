@@ -25,6 +25,8 @@ struct Observation: Identifiable, Hashable, Codable {
     var teacherConfidenceInTechnology: ObservationRecord?
     var questionsPosedByTeacherToStudents: ObservationRecord?
     
+    var comments: ObservationRecord?
+    
     var time: Date = .now
 }
 
@@ -34,6 +36,7 @@ enum ObservationRecord: Hashable, Codable {
     case options(String)
     
     case dict([String: Int])
+    case string(String)
     
     var numericValue: Int? {
         switch self {
@@ -52,6 +55,7 @@ enum ObservationRecord: Hashable, Codable {
     var stringValue: String? {
         switch self {
         case .options(let value): return value
+        case .string(let value): return value
         default: return nil
         }
     }
@@ -73,6 +77,7 @@ enum ObservationRecord: Hashable, Codable {
                 "\(key) used \(count)"
             }
             .joined(separator: "\n")
+        case .string(let value): return value
         }
     }
 }
@@ -92,6 +97,8 @@ enum Question: Int, CaseIterable {
     case howManyTimesWasTechnologyUsedByTeacher
     case teacherConfidenceInTechnology
     case questionsPosedByTeacherToStudents
+    
+    case comments
     
     var symbol: String {
         switch self {
@@ -119,6 +126,8 @@ enum Question: Int, CaseIterable {
             return "face.smiling"
         case .questionsPosedByTeacherToStudents:
             return "questionmark.bubble"
+        case .comments:
+            return "ellipsis.bubble"
         }
     }
     
@@ -156,6 +165,8 @@ enum Question: Int, CaseIterable {
             return .scale(1...10)
         case .questionsPosedByTeacherToStudents:
             return .openEndedList
+        case .comments:
+            return .text
         }
     }
     
@@ -185,6 +196,8 @@ enum Question: Int, CaseIterable {
             return "How confident was the teacher in the use of each technology?"
         case .questionsPosedByTeacherToStudents:
             return "What were the questions posed by the teacher to students?"
+        case .comments:
+            return "Any final comments?"
         }
     }
     
@@ -214,6 +227,8 @@ enum Question: Int, CaseIterable {
             return "How confident was the teacher in the use of each technology?"
         case .questionsPosedByTeacherToStudents:
             return "What were the questions posed by the teacher to students?"
+        case .comments:
+            return "Any final comments?"
         }
     }
     
@@ -243,6 +258,8 @@ enum Question: Int, CaseIterable {
             return "Teacher confidence in technology use"
         case .questionsPosedByTeacherToStudents:
             return "Questions posed by the teacher"
+        case .comments:
+            return "Comments"
         }
     }
     
@@ -272,6 +289,8 @@ enum Question: Int, CaseIterable {
             return "On a scale of 1 to 5 with 1 being unconfident and 5 being highly confident"
         case .questionsPosedByTeacherToStudents:
             return "List down the questions posed (if any)"
+        case .comments:
+            return "Optional"
         }
     }
     
@@ -301,6 +320,8 @@ enum Question: Int, CaseIterable {
             return \Observation.teacherConfidenceInTechnology
         case .questionsPosedByTeacherToStudents:
             return \Observation.questionsPosedByTeacherToStudents
+        case .comments:
+            return \Observation.comments
         }
     }
 }
@@ -311,4 +332,5 @@ enum InputType {
     case options([ChecklistOption])
     case scale(ClosedRange<Int>)
     case dict
+    case text
 }

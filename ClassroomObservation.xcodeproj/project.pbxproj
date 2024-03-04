@@ -29,6 +29,7 @@
 		32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ADD7332ABD6A80009E947A /* SurveyInputView.swift */; };
 		32E4CF342B9545C5006F4C8D /* ObservationRecordPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */; };
 		32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */; };
+		32E4CF382B9551E2006F4C8D /* TextSurveyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4CF372B9551E2006F4C8D /* TextSurveyInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		32ADD7332ABD6A80009E947A /* SurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyInputView.swift; sourceTree = "<group>"; };
 		32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationRecordPreviewView.swift; sourceTree = "<group>"; };
 		32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfScaleDictionarySurveyInput.swift; sourceTree = "<group>"; };
+		32E4CF372B9551E2006F4C8D /* TextSurveyInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSurveyInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				323DD6882B31EE2600A242E3 /* ReportCardView.swift */,
 				3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */,
 				32ADD7332ABD6A80009E947A /* SurveyInputView.swift */,
+				32E4CF372B9551E2006F4C8D /* TextSurveyInputView.swift */,
 				32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */,
 				326074A42B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift */,
 				324FB2452ABE71B50088A9C6 /* OpenEndedList.swift */,
@@ -208,6 +211,7 @@
 				3280D5E52AC3063E00B67785 /* Session.swift in Sources */,
 				329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */,
 				32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */,
+				32E4CF382B9551E2006F4C8D /* TextSurveyInputView.swift in Sources */,
 				323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */,
 				326074A32B2F7679009355E8 /* OpenEndedListTextField.swift in Sources */,
 				32ADD7252ABD620E009E947A /* ContentView.swift in Sources */,

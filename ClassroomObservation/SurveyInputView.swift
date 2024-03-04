@@ -124,6 +124,8 @@ struct SurveyInputView: View {
                         case .dict:
                             ListOfScaleDictionarySurveyInput(values: entry.technologyUsedByStudent?.stringArrayValue ?? [],
                                                              dictionary: $dictionaryValue)
+                        case .text:
+                            TextSurveyInputView(text: $selectedValue)
                         }
                     }
                     .padding()
@@ -220,6 +222,8 @@ struct SurveyInputView: View {
                 return ObservationRecord.numeric(value)
             case .dict:
                 return ObservationRecord.dict(dictionaryValue)
+            case .text:
+                return ObservationRecord.string(selectedValue)
             }
         }()
         
@@ -243,6 +247,8 @@ struct SurveyInputView: View {
             selectedValue = option
         case .dict(let option):
             dictionaryValue = option
+        case .string(let value):
+            selectedValue = value
         }
     }
 }
