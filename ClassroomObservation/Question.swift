@@ -70,8 +70,8 @@ enum ObservationRecord: Hashable, Codable {
     var value: String {
         switch self {
         case .numeric(let value): return "\(value)"
-        case .openEndedList(let value): return value.joined(separator: ", ")
-        case .options(let value): return value
+        case .openEndedList(let value): return value.filter({ !$0.isEmpty }).joined(separator: ", ")
+        case .options(let value): return value.capitalized
         case .dict(let value):
             return value.map { (key, count) in
                 "\(key) used \(count)"
@@ -94,8 +94,8 @@ enum Question: Int, CaseIterable {
     
     case whatIsTheTeacherDoing
     case technologyUsedByTeacher
-    case howManyTimesWasTechnologyUsedByTeacher
     case teacherConfidenceInTechnology
+    case howManyTimesWasTechnologyUsedByTeacher
     case questionsPosedByTeacherToStudents
     
     case comments
@@ -144,7 +144,7 @@ enum Question: Int, CaseIterable {
         case .technologyUsedByStudent:
             return .openEndedList
         case .howConfidentWereStudentsInTheUseOfEachTechnology:
-            return .dict
+            return .dict(\.technologyUsedByStudent)
         case .typeOfTaskSetByTeacher:
             return .options([
                 ChecklistOption(title: "active", description: "Students are engaged in using technology as a tool rather than passively receiving information from the technology."),
@@ -162,7 +162,7 @@ enum Question: Int, CaseIterable {
         case .howManyTimesWasTechnologyUsedByTeacher:
             return .numeric
         case .teacherConfidenceInTechnology:
-            return .scale(1...10)
+            return .dict(\.technologyUsedByTeacher)
         case .questionsPosedByTeacherToStudents:
             return .openEndedList
         case .comments:
@@ -330,7 +330,7 @@ enum InputType {
     case numeric
     case openEndedList
     case options([ChecklistOption])
-    case scale(ClosedRange<Int>)
-    case dict
+    case scale
+    case dict(WritableKeyPath<Observation, ObservationRecord?>)
     case text
 }

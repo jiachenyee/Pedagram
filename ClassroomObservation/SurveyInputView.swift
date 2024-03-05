@@ -21,7 +21,6 @@ struct SurveyInputView: View {
     @State private var openEndedOptions: [OpenEndedListOption] = [.init()]
     
     @State var isStaticText = true
-    @FocusState var focused
     
     @Environment(\.dismiss) var dismiss
     var completion: ((Observation) -> Void)
@@ -82,47 +81,21 @@ struct SurveyInputView: View {
                     VStack {
                         switch selectedQuestion.inputType {
                         case .numeric:
-                            TextField("Number",
-                                      value: $value,
-                                      format: .number)
-                            .keyboardType(.numberPad)
-                            .focused($focused)
-                            .multilineTextAlignment(.center)
-                            .font(.title)
-                            .fontWeight(.medium)
-                            .padding(.vertical)
-                            .background(.quinary)
-                            .clipShape(RoundedRectangle(cornerRadius: 8))
-                            .onAppear {
-                                focused = true
-                            }
-                            
-                            HStack {
-                                SurveyInputQuickCompletionButton(value: $value, increment: 1)
-                                SurveyInputQuickCompletionButton(value: $value, increment: -1)
-                            }
-                            
-                            HStack {
-                                SurveyInputQuickCompletionButton(value: $value, increment: 5)
-                                SurveyInputQuickCompletionButton(value: $value, increment: -5)
-                            }
-                            HStack {
-                                SurveyInputQuickCompletionButton(value: $value, increment: 10)
-                                SurveyInputQuickCompletionButton(value: $value, increment: -10)
-                            }
+                            SurveyNumericInputView(value: $value)
                         case .openEndedList:
                             OpenEndedList(shouldDisplayTechnologiesAutocomplete: selectedQuestion == .technologyUsedByStudent || selectedQuestion == .technologyUsedByTeacher,
                                           options: $openEndedOptions)
                         case .options(let array):
                             ChecklistPickerView(selectedValue: $selectedValue, options: array)
-                        case .scale(let range):
+                        case .scale:
                             ScaleInputView(value: Binding(get: {
                                 Double(value)
                             }, set: { newValue in
                                 value = Int(round(newValue))
                             }))
-                        case .dict:
-                            ListOfScaleDictionarySurveyInput(values: entry.technologyUsedByStudent?.stringArrayValue ?? [],
+                        case .dict(let path):
+                            let value = entry[keyPath: path]?.stringArrayValue ?? []
+                            ListOfScaleDictionarySurveyInput(values: value,
                                                              dictionary: $dictionaryValue)
                         case .text:
                             TextSurveyInputView(text: $selectedValue)
@@ -137,8 +110,8 @@ struct SurveyInputView: View {
                             save()
                             withAnimation {
                                 if let nextQuestion = Question(rawValue: selectedQuestion.rawValue - 1) {
-                                    reset()
                                     selectedQuestion = nextQuestion
+                                    reset()
                                 }
                             }
                             
@@ -156,16 +129,17 @@ struct SurveyInputView: View {
                     
                     Button {
                         save()
-                        withAnimation {
-                            if let nextQuestion = Question(rawValue: selectedQuestion.rawValue + 1) {
-                                reset()
-                                selectedQuestion = nextQuestion
-                            }
-                        }
                         
                         if Question.allCases.last == selectedQuestion {
                             completion(entry)
                             dismiss()
+                        }
+                        
+                        withAnimation {
+                            if let nextQuestion = Question(rawValue: selectedQuestion.rawValue + 1) {
+                                selectedQuestion = nextQuestion
+                                reset()
+                            }
                         }
                     } label: {
                         Text(Question.allCases.last == selectedQuestion ? "Done" : "Next")
@@ -196,7 +170,7 @@ struct SurveyInputView: View {
                     completion(entry)
                     dismiss()
                 } label: {
-                    Text("Save and Close")
+                    Text("Complete and Close")
                 }
                 
                 Button(role: .cancel) {
@@ -213,8 +187,8 @@ struct SurveyInputView: View {
             case .numeric:
                 return ObservationRecord.numeric(value)
             case .openEndedList:
-                return ObservationRecord.openEndedList(openEndedOptions.map({
-                    $0.contents
+                return ObservationRecord.openEndedList(openEndedOptions.compactMap({
+                    $0.contents.isEmpty ? nil : $0.contents
                 }))
             case .options:
                 return ObservationRecord.options(selectedValue)
@@ -228,6 +202,7 @@ struct SurveyInputView: View {
         }()
         
         entry[keyPath: selectedQuestion.path] = record
+        
     }
     
     func reset() {
@@ -235,14 +210,14 @@ struct SurveyInputView: View {
         selectedValue = ""
         openEndedOptions = [.init()]
         
-        guard let previousValue = entry[keyPath: selectedQuestion.path] else { return }
-        switch previousValue {
+        guard let nextValue = entry[keyPath: selectedQuestion.path] else { return }
+        switch nextValue {
         case .numeric(let number):
             value = number
         case .openEndedList(let list):
             openEndedOptions = list.map {
                 .init(contents: $0)
-            }
+            } + [.init()]
         case .options(let option):
             selectedValue = option
         case .dict(let option):

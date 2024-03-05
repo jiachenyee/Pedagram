@@ -34,7 +34,9 @@ struct PotentialTechnology: Identifiable {
         
         PotentialTechnology(name: "iPad", developer: "Apple"),
         PotentialTechnology(name: "Mac", developer: "Apple"),
-        PotentialTechnology(name: "iPhone", developer: "Apple")
+        PotentialTechnology(name: "iPhone", developer: "Apple"),
+        PotentialTechnology(name: "Apple TV", developer: "Apple"),
+        PotentialTechnology(name: "Apple Vision Pro", developer: "Apple")
     ]
     static let otherTools: [PotentialTechnology] = [
         PotentialTechnology(name: "Kahoot!", developer: "Kahoot!"),

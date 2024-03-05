@@ -11,28 +11,29 @@ struct ObservationRecordPreviewView: View {
     
     var observation: Observation
     
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationStack {
             List {
-                HStack {
-//                    studentsWorkingWithTechnology
-//                    studentsDoingIndependentWork
-//                    studentsDoingPairWork
-//                    studentsDoingGroupWork
-//                    technologyUsedByStudent
-//                    howManyTimesTechnologyUsedByStudent
-//                    typeOfTaskSetByTeacher
-//                    whatIsTheTeacherDoing
-//                    technologyUsedByTeacher
-//                    howManyTimesWasTechnologyUsedByTeacher
-//                    teacherConfidenceInTechnology
-//                    questionsPosedByTeacherToStudents
-                    
-                    
-                    
+                Section {
+                    ForEach(Question.allCases, id: \.rawValue) { question in
+                        HStack {
+                            Text(question.unformattedTitle)
+                            Spacer()
+                            Text(observation[keyPath: question.path]?.value ?? "")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                
+                Section {
+                    Button("Done") {
+                        dismiss()
+                    }
                 }
             }
-            .navigationTitle("Observation at" + observation.time.formatted(date: .omitted, time: .shortened))
+            .navigationTitle("Observation at \(observation.time.formatted(date: .omitted, time: .shortened))")
         }
     }
 }

@@ -31,10 +31,8 @@ struct OpenEndedListTextField: View {
             onSubmit()
         }
         .onChange(of: isFocused) { oldValue, newValue in
-            Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { _ in
-                if isFieldFocused != newValue {
-                    isFieldFocused = newValue
-                }
+            if isFieldFocused != newValue {
+                isFieldFocused = newValue
             }
         }
         .onChange(of: isFieldFocused) { oldValue, newValue in

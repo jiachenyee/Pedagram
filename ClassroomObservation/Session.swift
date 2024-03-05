@@ -30,4 +30,12 @@ struct Session: Identifiable, Hashable, Codable {
             $0.time > $1.time
         }
     }
+    
+    var state: SessionState = .notStarted
+    
+    enum SessionState: Codable {
+        case notStarted
+        case recording
+        case finished
+    }
 }

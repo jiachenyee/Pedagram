@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32329D562B96A986005A59F8 /* ObservationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32329D552B96A986005A59F8 /* ObservationRowView.swift */; };
+		32329D582B96AE43005A59F8 /* SessionRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32329D572B96AE43005A59F8 /* SessionRecordingView.swift */; };
+		32329D5A2B96BC47005A59F8 /* SurveyNumericInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32329D592B96BC47005A59F8 /* SurveyNumericInputView.swift */; };
+		32329D5C2B96C1DC005A59F8 /* SessionCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32329D5B2B96C1DC005A59F8 /* SessionCompletionView.swift */; };
 		323DD6892B31EE2600A242E3 /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD6882B31EE2600A242E3 /* ReportCardView.swift */; };
 		323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DD68A2B31FE8F00A242E3 /* ReportAggregateList.swift */; };
 		324FB2462ABE71B50088A9C6 /* OpenEndedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324FB2452ABE71B50088A9C6 /* OpenEndedList.swift */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32329D552B96A986005A59F8 /* ObservationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationRowView.swift; sourceTree = "<group>"; };
+		32329D572B96AE43005A59F8 /* SessionRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRecordingView.swift; sourceTree = "<group>"; };
+		32329D592B96BC47005A59F8 /* SurveyNumericInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyNumericInputView.swift; sourceTree = "<group>"; };
+		32329D5B2B96C1DC005A59F8 /* SessionCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCompletionView.swift; sourceTree = "<group>"; };
 		323DD6882B31EE2600A242E3 /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
 		323DD68A2B31FE8F00A242E3 /* ReportAggregateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAggregateList.swift; sourceTree = "<group>"; };
 		324FB2452ABE71B50088A9C6 /* OpenEndedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEndedList.swift; sourceTree = "<group>"; };
@@ -95,12 +103,16 @@
 				3280D62A2AC549FF00B67785 /* NewSessionView.swift */,
 				3280D5E42AC3063E00B67785 /* Session.swift */,
 				3280D5E22AC3063300B67785 /* SessionView.swift */,
+				32329D572B96AE43005A59F8 /* SessionRecordingView.swift */,
+				32329D5B2B96C1DC005A59F8 /* SessionCompletionView.swift */,
+				32329D552B96A986005A59F8 /* ObservationRowView.swift */,
 				3280D5E62AC35CC400B67785 /* ReportView.swift */,
 				323DD68A2B31FE8F00A242E3 /* ReportAggregateList.swift */,
 				32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */,
 				323DD6882B31EE2600A242E3 /* ReportCardView.swift */,
 				3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */,
 				32ADD7332ABD6A80009E947A /* SurveyInputView.swift */,
+				32329D592B96BC47005A59F8 /* SurveyNumericInputView.swift */,
 				32E4CF372B9551E2006F4C8D /* TextSurveyInputView.swift */,
 				32E4CF352B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift */,
 				326074A42B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift */,
@@ -208,17 +220,21 @@
 				3280D5E72AC35CC400B67785 /* ReportView.swift in Sources */,
 				323DD6892B31EE2600A242E3 /* ReportCardView.swift in Sources */,
 				32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */,
+				32329D5C2B96C1DC005A59F8 /* SessionCompletionView.swift in Sources */,
 				3280D5E52AC3063E00B67785 /* Session.swift in Sources */,
 				329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */,
 				32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */,
 				32E4CF382B9551E2006F4C8D /* TextSurveyInputView.swift in Sources */,
 				323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */,
 				326074A32B2F7679009355E8 /* OpenEndedListTextField.swift in Sources */,
+				32329D562B96A986005A59F8 /* ObservationRowView.swift in Sources */,
 				32ADD7252ABD620E009E947A /* ContentView.swift in Sources */,
 				3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */,
 				32E4CF342B9545C5006F4C8D /* ObservationRecordPreviewView.swift in Sources */,
+				32329D5A2B96BC47005A59F8 /* SurveyNumericInputView.swift in Sources */,
 				32ADD7232ABD620E009E947A /* ClassroomObservationApp.swift in Sources */,
 				3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */,
+				32329D582B96AE43005A59F8 /* SessionRecordingView.swift in Sources */,
 				329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */,
 				324FB2462ABE71B50088A9C6 /* OpenEndedList.swift in Sources */,
 			);
@@ -348,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -388,7 +404,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;

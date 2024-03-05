@@ -18,8 +18,6 @@ struct OpenEndedList: View {
     
     @Binding var options: [OpenEndedListOption]
     
-    @FocusState var isFirstElementFocused
-    
     @State private var focusedFieldId: UUID? = nil
     
     var body: some View {
@@ -45,13 +43,13 @@ struct OpenEndedList: View {
                     withAnimation {
                         options.append(.init())
                     }
+                } else if newValue.count == 0 {
+                    focusedFieldId = nil
                 }
             }
             .onAppear {
                 focusedFieldId = options.first?.id
-                isFirstElementFocused = true
             }
-            
             if shouldDisplayTechnologiesAutocomplete,
                let optionIndex = options.firstIndex(where: { $0.id == focusedFieldId }) {
                 ScrollView(.horizontal) {
