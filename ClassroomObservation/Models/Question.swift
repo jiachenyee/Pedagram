@@ -74,7 +74,7 @@ enum ObservationRecord: Hashable, Codable {
         case .options(let value): return value.capitalized
         case .dict(let value):
             return value.map { (key, count) in
-                "\(key) used \(count)"
+                "\(key): \(count)"
             }
             .joined(separator: "\n")
         case .string(let value): return value
@@ -95,7 +95,6 @@ enum Question: Int, CaseIterable {
     case whatIsTheTeacherDoing
     case technologyUsedByTeacher
     case teacherConfidenceInTechnology
-    case howManyTimesWasTechnologyUsedByTeacher
     case questionsPosedByTeacherToStudents
     
     case comments
@@ -120,8 +119,6 @@ enum Question: Int, CaseIterable {
             return "studentdesk"
         case .technologyUsedByTeacher:
             return "desktopcomputer"
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return "number"
         case .teacherConfidenceInTechnology:
             return "face.smiling"
         case .questionsPosedByTeacherToStudents:
@@ -159,8 +156,6 @@ enum Question: Int, CaseIterable {
             }))
         case .technologyUsedByTeacher:
             return .openEndedList
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return .numeric
         case .teacherConfidenceInTechnology:
             return .dict(\.technologyUsedByTeacher)
         case .questionsPosedByTeacherToStudents:
@@ -190,8 +185,6 @@ enum Question: Int, CaseIterable {
             return "What is [the teacher](https://example.com) doing?"
         case .technologyUsedByTeacher:
             return "What is the technology being used [by the teacher](https://example.com)?"
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return "How many times was each technology used [by the teacher](https://example.com)?"
         case .teacherConfidenceInTechnology:
             return "How confident was the teacher in the use of each technology?"
         case .questionsPosedByTeacherToStudents:
@@ -214,15 +207,13 @@ enum Question: Int, CaseIterable {
         case .technologyUsedByStudent:
             return "What is the technology being used by students?"
         case .howConfidentWereStudentsInTheUseOfEachTechnology:
-            return "How many times was each technology used by students?"
+            return "How confident were the students in the use of each technology?"
         case .typeOfTaskSetByTeacher:
             return "What was the type of task being set by the teacher for students?"
         case .whatIsTheTeacherDoing:
             return "What is the teacher doing?"
         case .technologyUsedByTeacher:
             return "What is the technology being used by the teacher?"
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return "How many times was each technology used by the teacher?"
         case .teacherConfidenceInTechnology:
             return "How confident was the teacher in the use of each technology?"
         case .questionsPosedByTeacherToStudents:
@@ -252,8 +243,6 @@ enum Question: Int, CaseIterable {
             return "What is the teacher doing"
         case .technologyUsedByTeacher:
             return "Technology used by teacher"
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return "Technology use by the teacher"
         case .teacherConfidenceInTechnology:
             return "Teacher confidence in technology use"
         case .questionsPosedByTeacherToStudents:
@@ -283,8 +272,6 @@ enum Question: Int, CaseIterable {
             return nil
         case .technologyUsedByTeacher:
             return "List the hardware as well as the software application being used"
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return nil
         case .teacherConfidenceInTechnology:
             return "On a scale of 1 to 5 with 1 being unconfident and 5 being highly confident"
         case .questionsPosedByTeacherToStudents:
@@ -314,8 +301,6 @@ enum Question: Int, CaseIterable {
             return \Observation.whatIsTheTeacherDoing
         case .technologyUsedByTeacher:
             return \Observation.technologyUsedByTeacher
-        case .howManyTimesWasTechnologyUsedByTeacher:
-            return \Observation.howManyTimesWasTechnologyUsedByTeacher
         case .teacherConfidenceInTechnology:
             return \Observation.teacherConfidenceInTechnology
         case .questionsPosedByTeacherToStudents:

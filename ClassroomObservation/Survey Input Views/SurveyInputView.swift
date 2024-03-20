@@ -209,6 +209,7 @@ struct SurveyInputView: View {
         value = 0
         selectedValue = ""
         openEndedOptions = [.init()]
+        dictionaryValue = [:]
         
         guard let nextValue = entry[keyPath: selectedQuestion.path] else { return }
         switch nextValue {

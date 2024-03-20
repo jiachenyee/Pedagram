@@ -41,9 +41,3 @@ struct ChecklistPickerView: View {
         }
     }
 }
-
-struct ChecklistOption: Hashable, Identifiable {
-    var id: String { title }
-    var title: String
-    var description: String?
-}

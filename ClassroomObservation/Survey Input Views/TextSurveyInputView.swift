@@ -23,7 +23,9 @@ struct TextSurveyInputView: View {
             .background(.quinary)
             .clipShape(RoundedRectangle(cornerRadius: 8))
             .onAppear {
-                focused = true
+                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
+                    focused = true
+                }
             }
             .font(.title3)
     }
