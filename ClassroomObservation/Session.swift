@@ -24,6 +24,19 @@ struct Session: Identifiable, Hashable, Codable {
         }
     }
     
+    var formattedDuration: String {
+        let hours = durationMinutes / 60
+        let minutes = durationMinutes % 60
+        
+        if hours == 0 {
+            return "\(minutes)m"
+        } else if minutes == 0 {
+            return "\(hours)h"
+        } else {
+            return "\(hours)h \(minutes)m"
+        }
+    }
+    
     var observations: [Observation]
     var sortedObservations: [Observation] {
         observations.sorted {

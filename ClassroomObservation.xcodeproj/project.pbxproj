@@ -23,6 +23,20 @@
 		3280D5E72AC35CC400B67785 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D5E62AC35CC400B67785 /* ReportView.swift */; };
 		3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */; };
 		3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280D62A2AC549FF00B67785 /* NewSessionView.swift */; };
+		329A09212BB1F180000D73C7 /* ReportExportSessionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09202BB1F180000D73C7 /* ReportExportSessionInfoView.swift */; };
+		329A09232BB1F20F000D73C7 /* ReportExportStudentsWorkingWithTechnologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09222BB1F20F000D73C7 /* ReportExportStudentsWorkingWithTechnologyView.swift */; };
+		329A09252BB1F78F000D73C7 /* ReportExportPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09242BB1F78F000D73C7 /* ReportExportPage.swift */; };
+		329A09272BB1F917000D73C7 /* ReportExportStudentEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09262BB1F917000D73C7 /* ReportExportStudentEngagementView.swift */; };
+		329A09292BB1F973000D73C7 /* ReportStudentEngagementGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09282BB1F973000D73C7 /* ReportStudentEngagementGraphView.swift */; };
+		329A092B2BB21808000D73C7 /* ReportExportStudentConfidenceInTechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A092A2BB21808000D73C7 /* ReportExportStudentConfidenceInTechView.swift */; };
+		329A092D2BB219AE000D73C7 /* ReportExportTeacherConfidenceInTechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A092C2BB219AE000D73C7 /* ReportExportTeacherConfidenceInTechView.swift */; };
+		329A092F2BB2295A000D73C7 /* ReportExportPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A092E2BB2295A000D73C7 /* ReportExportPage1.swift */; };
+		329A09312BB22979000D73C7 /* ReportExportPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09302BB22979000D73C7 /* ReportExportPage2.swift */; };
+		329A09332BB229A0000D73C7 /* ReportExportPage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09322BB229A0000D73C7 /* ReportExportPage3.swift */; };
+		329A09352BB229C4000D73C7 /* ReportExportPage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09342BB229C4000D73C7 /* ReportExportPage4.swift */; };
+		329A09372BB229DD000D73C7 /* ReportExportPage5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09362BB229DD000D73C7 /* ReportExportPage5.swift */; };
+		329A09392BB22A02000D73C7 /* ReportExportPage6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A09382BB22A02000D73C7 /* ReportExportPage6.swift */; };
+		329A093B2BB22A18000D73C7 /* ReportExportPage7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A093A2BB22A18000D73C7 /* ReportExportPage7.swift */; };
 		329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */; };
 		329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6D2B910E320054DAEA /* ChecklistPickerView.swift */; };
 		329CAF702B910FFD0054DAEA /* ScaleInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CAF6F2B910FFD0054DAEA /* ScaleInputView.swift */; };
@@ -55,6 +69,20 @@
 		3280D5E62AC35CC400B67785 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportStudentsEngagementView.swift; sourceTree = "<group>"; };
 		3280D62A2AC549FF00B67785 /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		329A09202BB1F180000D73C7 /* ReportExportSessionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportSessionInfoView.swift; sourceTree = "<group>"; };
+		329A09222BB1F20F000D73C7 /* ReportExportStudentsWorkingWithTechnologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportStudentsWorkingWithTechnologyView.swift; sourceTree = "<group>"; };
+		329A09242BB1F78F000D73C7 /* ReportExportPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage.swift; sourceTree = "<group>"; };
+		329A09262BB1F917000D73C7 /* ReportExportStudentEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportStudentEngagementView.swift; sourceTree = "<group>"; };
+		329A09282BB1F973000D73C7 /* ReportStudentEngagementGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportStudentEngagementGraphView.swift; sourceTree = "<group>"; };
+		329A092A2BB21808000D73C7 /* ReportExportStudentConfidenceInTechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportStudentConfidenceInTechView.swift; sourceTree = "<group>"; };
+		329A092C2BB219AE000D73C7 /* ReportExportTeacherConfidenceInTechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportTeacherConfidenceInTechView.swift; sourceTree = "<group>"; };
+		329A092E2BB2295A000D73C7 /* ReportExportPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage1.swift; sourceTree = "<group>"; };
+		329A09302BB22979000D73C7 /* ReportExportPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage2.swift; sourceTree = "<group>"; };
+		329A09322BB229A0000D73C7 /* ReportExportPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage3.swift; sourceTree = "<group>"; };
+		329A09342BB229C4000D73C7 /* ReportExportPage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage4.swift; sourceTree = "<group>"; };
+		329A09362BB229DD000D73C7 /* ReportExportPage5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage5.swift; sourceTree = "<group>"; };
+		329A09382BB22A02000D73C7 /* ReportExportPage6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage6.swift; sourceTree = "<group>"; };
+		329A093A2BB22A18000D73C7 /* ReportExportPage7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportExportPage7.swift; sourceTree = "<group>"; };
 		329CAF6B2B9104590054DAEA /* PotentialTechnology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotentialTechnology.swift; sourceTree = "<group>"; };
 		329CAF6D2B910E320054DAEA /* ChecklistPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistPickerView.swift; sourceTree = "<group>"; };
 		329CAF6F2B910FFD0054DAEA /* ScaleInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleInputView.swift; sourceTree = "<group>"; };
@@ -125,8 +153,29 @@
 				323DD6882B31EE2600A242E3 /* ReportCardView.swift */,
 				32242CFE2B9E5F5C00053C79 /* ConfidenceReportCartView.swift */,
 				3280D6282AC46FC900B67785 /* ReportStudentsEngagementView.swift */,
+				329A09282BB1F973000D73C7 /* ReportStudentEngagementGraphView.swift */,
 			);
 			path = Report;
+			sourceTree = "<group>";
+		};
+		329A091D2BB1AA55000D73C7 /* Report Export View */ = {
+			isa = PBXGroup;
+			children = (
+				329A093A2BB22A18000D73C7 /* ReportExportPage7.swift */,
+				329A09382BB22A02000D73C7 /* ReportExportPage6.swift */,
+				329A09362BB229DD000D73C7 /* ReportExportPage5.swift */,
+				329A09342BB229C4000D73C7 /* ReportExportPage4.swift */,
+				329A09322BB229A0000D73C7 /* ReportExportPage3.swift */,
+				329A09302BB22979000D73C7 /* ReportExportPage2.swift */,
+				329A092E2BB2295A000D73C7 /* ReportExportPage1.swift */,
+				329A092A2BB21808000D73C7 /* ReportExportStudentConfidenceInTechView.swift */,
+				329A092C2BB219AE000D73C7 /* ReportExportTeacherConfidenceInTechView.swift */,
+				329A09242BB1F78F000D73C7 /* ReportExportPage.swift */,
+				329A09202BB1F180000D73C7 /* ReportExportSessionInfoView.swift */,
+				329A09222BB1F20F000D73C7 /* ReportExportStudentsWorkingWithTechnologyView.swift */,
+				329A09262BB1F917000D73C7 /* ReportExportStudentEngagementView.swift */,
+			);
+			path = "Report Export View";
 			sourceTree = "<group>";
 		};
 		32ADD7162ABD620E009E947A = {
@@ -157,6 +206,7 @@
 				32329D5B2B96C1DC005A59F8 /* SessionCompletionView.swift */,
 				32329D552B96A986005A59F8 /* ObservationRowView.swift */,
 				32E4CF332B9545C5006F4C8D /* ObservationRecordPreviewView.swift */,
+				329A091D2BB1AA55000D73C7 /* Report Export View */,
 				327DE1252BAA03A2001853C7 /* Report */,
 				327DE1202BAA033A001853C7 /* Survey Input Views */,
 				327DE1212BAA0345001853C7 /* Models */,
@@ -251,31 +301,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329A092B2BB21808000D73C7 /* ReportExportStudentConfidenceInTechView.swift in Sources */,
 				329CAF702B910FFD0054DAEA /* ScaleInputView.swift in Sources */,
 				32ADD7322ABD6640009E947A /* Question.swift in Sources */,
+				329A09312BB22979000D73C7 /* ReportExportPage2.swift in Sources */,
 				32242CFF2B9E5F5C00053C79 /* ConfidenceReportCartView.swift in Sources */,
+				329A093B2BB22A18000D73C7 /* ReportExportPage7.swift in Sources */,
 				3280D5E32AC3063300B67785 /* SessionView.swift in Sources */,
+				329A09272BB1F917000D73C7 /* ReportExportStudentEngagementView.swift in Sources */,
+				329A092D2BB219AE000D73C7 /* ReportExportTeacherConfidenceInTechView.swift in Sources */,
+				329A09332BB229A0000D73C7 /* ReportExportPage3.swift in Sources */,
 				326074A52B31E5AF009355E8 /* SurveyInputQuickCompletionButton.swift in Sources */,
 				3280D5E72AC35CC400B67785 /* ReportView.swift in Sources */,
+				329A09392BB22A02000D73C7 /* ReportExportPage6.swift in Sources */,
 				323DD6892B31EE2600A242E3 /* ReportCardView.swift in Sources */,
 				32ADD7342ABD6A80009E947A /* SurveyInputView.swift in Sources */,
 				32329D5C2B96C1DC005A59F8 /* SessionCompletionView.swift in Sources */,
 				3280D5E52AC3063E00B67785 /* Session.swift in Sources */,
 				329CAF6E2B910E320054DAEA /* ChecklistPickerView.swift in Sources */,
+				329A09292BB1F973000D73C7 /* ReportStudentEngagementGraphView.swift in Sources */,
+				329A09372BB229DD000D73C7 /* ReportExportPage5.swift in Sources */,
 				32E4CF362B954A96006F4C8D /* ListOfScaleDictionarySurveyInput.swift in Sources */,
 				32E4CF382B9551E2006F4C8D /* TextSurveyInputView.swift in Sources */,
 				323DD68B2B31FE8F00A242E3 /* ReportAggregateList.swift in Sources */,
 				326074A32B2F7679009355E8 /* OpenEndedListTextField.swift in Sources */,
 				32329D562B96A986005A59F8 /* ObservationRowView.swift in Sources */,
 				32ADD7252ABD620E009E947A /* ContentView.swift in Sources */,
+				329A09232BB1F20F000D73C7 /* ReportExportStudentsWorkingWithTechnologyView.swift in Sources */,
 				3280D6292AC46FCA00B67785 /* ReportStudentsEngagementView.swift in Sources */,
 				32E4CF342B9545C5006F4C8D /* ObservationRecordPreviewView.swift in Sources */,
 				327DE1242BAA036C001853C7 /* ChecklistOption.swift in Sources */,
 				32329D5A2B96BC47005A59F8 /* SurveyNumericInputView.swift in Sources */,
 				32ADD7232ABD620E009E947A /* ClassroomObservationApp.swift in Sources */,
+				329A09212BB1F180000D73C7 /* ReportExportSessionInfoView.swift in Sources */,
+				329A09352BB229C4000D73C7 /* ReportExportPage4.swift in Sources */,
 				3280D62B2AC549FF00B67785 /* NewSessionView.swift in Sources */,
 				32329D582B96AE43005A59F8 /* SessionRecordingView.swift in Sources */,
+				329A092F2BB2295A000D73C7 /* ReportExportPage1.swift in Sources */,
 				329CAF6C2B9104590054DAEA /* PotentialTechnology.swift in Sources */,
+				329A09252BB1F78F000D73C7 /* ReportExportPage.swift in Sources */,
 				324FB2462ABE71B50088A9C6 /* OpenEndedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +468,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -444,7 +508,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassroomObservation/ClassroomObservation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassroomObservation/Preview Content\"";
 				DEVELOPMENT_TEAM = 9W63WN9LG4;
 				ENABLE_HARDENED_RUNTIME = YES;

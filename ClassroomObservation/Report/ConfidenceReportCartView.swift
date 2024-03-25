@@ -39,7 +39,7 @@ struct ConfidenceReportCartView: View {
             HStack(spacing: 0) {
                 let technologiesUsed = Array(Set(session.observations.compactMap {
                     $0[keyPath: question.path]?.dictValue?.keys.map({ $0 })
-                }.flatMap { $0 }))
+                }.flatMap { $0 })).sorted()
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text("Technologies")
@@ -61,7 +61,7 @@ struct ConfidenceReportCartView: View {
                 
                 ScrollView(.horizontal) {
                     HStack(spacing: 0) {
-                        ForEach(session.observations) { observation in
+                        ForEach(Array(session.sortedObservations.reversed())) { observation in
                             VStack(spacing: 0) {
                                 Text(observation.time, style: .time)
                                     .foregroundStyle(.secondary)

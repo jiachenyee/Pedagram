@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PDFKit
 
 //  case studentsWorkingWithTechnology YES
 //  case studentsDoingIndependentWork YES
@@ -26,6 +27,7 @@ struct ReportView: View {
     
     var session: Session
     
+    @State private var isExportablePDFViewPresented = false
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -38,8 +40,6 @@ struct ReportView: View {
                         .clipShape(.rect(cornerRadius: 8))
                     
                     ReportStudentsEngagementView(session: session)
-                    
-                    // Visualize what the teacher is doing
                     
                     ConfidenceReportCartView(question: .howConfidentWereStudentsInTheUseOfEachTechnology, session: session)
                         .padding()
@@ -172,11 +172,7 @@ struct ReportView: View {
             .navigationTitle("Observation Report")
             .toolbar {
                 ToolbarItemGroup(placement: .topBarTrailing) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+                    ShareLink(item: export())
                     
                     Button {
                         dismiss()
@@ -186,5 +182,63 @@ struct ReportView: View {
                 }
             }
         }
+    }
+    
+    @MainActor func export() -> URL {
+        let pageViews: [AnyView] = [
+            AnyView(ReportExportPage1(session: session)),
+            AnyView(ReportExportPage2(session: session)),
+            AnyView(ReportExportPage3(session: session)),
+            AnyView(ReportExportPage4(session: session)),
+            AnyView(ReportExportPage5(session: session)),
+            AnyView(ReportExportPage6(session: session)),
+            AnyView(ReportExportPage7(session: session))
+        ]
+        
+        let jobId = UUID().uuidString
+        
+        var urls: [URL] = []
+        
+        for (n, pageView) in pageViews.enumerated() {
+            let url = URL.temporaryDirectory.appending(path: "\(jobId)-\(n).pdf")
+            let renderer = ImageRenderer(content: pageView.preferredColorScheme(.light))
+            
+            renderer.render { size, context in
+                var box = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+                
+                guard let pdf = CGContext(url as CFURL, mediaBox: &box, nil) else {
+                    return
+                }
+                
+                pdf.beginPDFPage(nil)
+                
+                context(pdf)
+                
+                pdf.endPDFPage()
+                pdf.closePDF()
+            }
+            
+            urls.append(url)
+        }
+        
+        let mergedPdfDocument = PDFDocument()
+        
+        for url in urls {
+            guard let pdfDocument = PDFDocument(url: url) else {
+                continue
+            }
+            
+            let pageCount = pdfDocument.pageCount
+            for pageIndex in 0..<pageCount {
+                guard let page = pdfDocument.page(at: pageIndex) else { continue }
+                mergedPdfDocument.insert(page, at: mergedPdfDocument.pageCount)
+            }
+        }
+        
+        let outputURL = URL.documentsDirectory.appending(path: jobId + ".pdf")
+        
+        mergedPdfDocument.write(to: outputURL)
+        
+        return outputURL
     }
 }

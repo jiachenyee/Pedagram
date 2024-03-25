@@ -27,7 +27,7 @@ struct NewSessionView: View {
                     TextField("Class", text: $session.class)
                     
                     Picker("Grade", selection: $session.grade) {
-                        ForEach(1..<7) { value in
+                        ForEach(1..<14) { value in
                             Text("\(value)")
                                 .tag("\(value)")
                         }

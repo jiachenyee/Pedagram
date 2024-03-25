@@ -21,12 +21,12 @@ struct OpenEndedListTextField: View {
     var body: some View {
         TextField(isFirstItem ? "Type an item here." : "Type another item here.",
                   text: $text)
+        .focused($isFieldFocused)
         .multilineTextAlignment(.center)
         .font(.title3)
         .padding(.vertical, 8)
         .background(.quinary)
         .clipShape(RoundedRectangle(cornerRadius: 8))
-        .focused($isFieldFocused)
         .onSubmit {
             onSubmit()
         }

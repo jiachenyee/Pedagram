@@ -22,11 +22,11 @@ struct TextSurveyInputView: View {
             .padding()
             .background(.quinary)
             .clipShape(RoundedRectangle(cornerRadius: 8))
-            .onAppear {
-                Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
-                    focused = true
-                }
-            }
+//            .onAppear {
+//                Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+//                    focused = true
+//                }
+//            }
             .font(.title3)
     }
 }
