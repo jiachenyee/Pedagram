@@ -1,4 +1,5 @@
 {
+  "originHash" : "e1e1b96460c4ee4adb7198e1474a1898e6572c232bc51c9a00eff7437e7bbd1c",
   "pins" : [
     {
       "identity" : "forever",
@@ -8,7 +9,16 @@
         "revision" : "90274e87842722d9b79e61431cbbef1c418944b6",
         "version" : "1.1.0"
       }
+    },
+    {
+      "identity" : "swiftuipdf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jiachenyee/SwiftUIPDF",
+      "state" : {
+        "revision" : "e26e772d360dc8126a4f1a120f8f1524b2d99742",
+        "version" : "1.0.3"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

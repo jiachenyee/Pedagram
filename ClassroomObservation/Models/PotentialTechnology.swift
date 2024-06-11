@@ -76,7 +76,7 @@ struct PotentialTechnology: Identifiable {
     ]
     
     static func suggestions(for partialSearch: String) -> [PotentialTechnology] {
-        return all.compactMap {
+        return partialSearch.isEmpty ? all : all.compactMap {
             if $0.name.lowercased().contains(partialSearch.lowercased()) {
                 return ($0, Double(partialSearch.count) / Double($0.name.count))
             } else if ($0.developer?.lowercased() ?? "").contains(partialSearch.lowercased()) {
