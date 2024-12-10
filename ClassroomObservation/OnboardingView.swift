@@ -27,25 +27,25 @@ struct OnboardingView: View {
                 OnboardingDynamicView(content: {
                     ZStack(alignment: .top) {
                         Image(systemName: "sidebar.left")
-                            .font(.system(size: 270, weight: .light))
+                            .font(.system(size: 200, weight: .light))
                             .foregroundStyle(.tertiary)
                         
                         ZStack {
                             Image(systemName: "circle.fill")
-                                .font(.system(size: 80))
+                                .font(.system(size: 60))
                                 .foregroundStyle(.white)
                             Image(systemName: "plus.circle.fill")
-                                .font(.system(size: 80))
+                                .font(.system(size: 60))
                                 .foregroundStyle(.blue)
                         }
-                        .offset(x: -60)
+                        .offset(x: -35)
                     }
                 }, title: "Create a Record", description: "Work with a peer and observe their lessons. Use Pedagram to provide objective feedback.")
                 .tag(0)
                 
                 OnboardingDynamicView(content: {
                     Image(systemName: "list.clipboard")
-                        .font(.system(size: 270, weight: .light))
+                        .font(.system(size: 200, weight: .light))
                         .foregroundStyle(.blue)
                         .symbolRenderingMode(.multicolor)
                 }, title: "Set Up Your Session", description: "Record the class, subject, duration, and other additional details.\n\nThis information will show up in the report.")
@@ -54,9 +54,9 @@ struct OnboardingView: View {
                 OnboardingDynamicView(content: {
                     HStack {
                         Image(systemName: "10.circle")
-                            .font(.system(size: 170, weight: .regular))
+                            .font(.system(size: 150, weight: .regular))
                         Image(systemName: "15.circle.fill")
-                            .font(.system(size: 170, weight: .regular))
+                            .font(.system(size: 150, weight: .regular))
                     }
                     .foregroundStyle(.blue)
                     .symbolRenderingMode(.hierarchical)
@@ -122,7 +122,7 @@ struct OnboardingView: View {
                 Button {
                     isNewSessionPresented.toggle()
                 } label: {
-                    Text("Create New Session")
+                    Text("Create Session")
                         .padding()
                         .frame(maxWidth: .infinity)
                 }

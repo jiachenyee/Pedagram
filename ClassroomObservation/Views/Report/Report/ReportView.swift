@@ -16,20 +16,39 @@ struct ReportView: View {
     
     @State private var exportedURL: URL?
     
+    var isiPad: Bool {
+        UIDevice.current.userInterfaceIdiom == .pad
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    HStack {
-                        ReportValueCardView(title: "Class", value: session.class)
-                        ReportValueCardView(title: "Grade", value: session.grade)
-                        ReportValueCardView(title: "Subject", value: session.subject ?? "N/A")
-                    }
-                    
-                    HStack {
-                        ReportValueCardView(title: "Enrolment", value: "\(session.enrolment)")
-                        ReportValueCardView(title: "Observations", value: "\(session.observations.count)")
-                        ReportValueCardView(title: "Observation Interval", value: "\(Int(session.recordingFrequency ?? 15))m")
+                    if isiPad {
+                        HStack {
+                            ReportValueCardView(title: "Class", value: session.class)
+                            ReportValueCardView(title: "Grade", value: session.grade)
+                            ReportValueCardView(title: "Subject", value: session.subject ?? "N/A")
+                        }
+                        
+                        HStack {
+                            ReportValueCardView(title: "Enrolment", value: "\(session.enrolment)")
+                            ReportValueCardView(title: "Observations", value: "\(session.observations.count)")
+                            ReportValueCardView(title: "Observation Interval", value: "\(Int(session.recordingFrequency ?? 15))m")
+                        }
+                    } else {
+                        HStack {
+                            ReportValueCardView(title: "Class", value: session.class)
+                            ReportValueCardView(title: "Grade", value: session.grade)
+                        }
+                        HStack {
+                            ReportValueCardView(title: "Subject", value: session.subject ?? "N/A")
+                            ReportValueCardView(title: "Enrolment", value: "\(session.enrolment)")
+                        }
+                        HStack {
+                            ReportValueCardView(title: "Observations", value: "\(session.observations.count)")
+                            ReportValueCardView(title: "Interval", value: "\(Int(session.recordingFrequency ?? 15))m")
+                        }
                     }
                     
                     ReportCardView(question: .studentsWorkingWithTechnology, session: session)

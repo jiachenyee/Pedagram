@@ -36,20 +36,23 @@ struct OnboardingDynamicView<Content: View>: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                 }
             } else {
-                VStack {
-                    content
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    Divider()
-                        .padding(.vertical)
-                    VStack(alignment: .leading) {
-                        Text(title)
-                            .font(.title)
-                            .fontWeight(.bold)
-                        
-                        Text(description)
+                GeometryReader { reader in
+                    VStack {
+                        content
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .frame(height: reader.size.height / 2)
+                        Divider()
+                            .padding(.vertical)
+                        VStack(alignment: .leading) {
+                            Text(title)
+                                .font(.title)
+                                .fontWeight(.bold)
+                            
+                            Text(description)
+                        }
+                        .multilineTextAlignment(.leading)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                     }
-                    .multilineTextAlignment(.leading)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 }
             }
         }

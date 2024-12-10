@@ -13,6 +13,10 @@ struct SessionView: View {
     
     @State private var isPrerecordingInfoViewPresented = false
     
+    var isiPad: Bool {
+        UIDevice.current.userInterfaceIdiom == .pad
+    }
+    
     var body: some View {
         List {
             VStack(alignment: .leading) {
@@ -23,7 +27,7 @@ struct SessionView: View {
                 Text(session.lessonTime.formatted(date: .abbreviated, time: .shortened))
             }
             .listRowBackground(EmptyView())
-            .listRowInsets(.init(top: 0, leading: 4, bottom: 0, trailing: 4))
+            .listRowInsets(.init(top: 0, leading: isiPad ? 4 : 0, bottom: 0, trailing: isiPad ? 4 : 0))
             .foregroundStyle(.secondary)
             
             switch session.state {
