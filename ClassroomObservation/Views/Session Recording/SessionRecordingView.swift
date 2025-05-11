@@ -24,15 +24,25 @@ struct SessionRecordingView: View {
     
     var body: some View {
         Section {
-            Text("\(timeUntilNextSession)")
-                .monospacedDigit()
-                .contentTransition(.numericText())
-                .font(.title)
-                .fontWeight(.medium)
-                .foregroundStyle(timeUntilNextSession == "Create Observation Now" && isBlue ? Color.accentColor : Color.primary)
-                .onTapGesture {
-                    isNewEntryPresented.toggle()
-                }
+            if timeUntilNextSession == "Create Observation Now" {
+                Text("Create Observation Now")
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .foregroundStyle(isBlue ? Color.accentColor : Color.primary)
+                    .onTapGesture {
+                        isNewEntryPresented.toggle()
+                    }
+            } else {
+                Text("\(timeUntilNextSession)")
+                    .monospacedDigit()
+                    .contentTransition(.numericText())
+                    .font(.title)
+                    .fontWeight(.medium)
+                    .foregroundStyle(Color.primary)
+                    .onTapGesture {
+                        isNewEntryPresented.toggle()
+                    }
+            }
             
             Button {
                 isNewEntryPresented.toggle()

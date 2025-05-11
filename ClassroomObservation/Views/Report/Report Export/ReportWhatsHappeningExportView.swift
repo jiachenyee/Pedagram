@@ -104,7 +104,7 @@ struct ReportWhatsHappeningExportView: View {
                         .foregroundStyle(colorAssignment[key]!)
                         .opacity(0.4)
                     
-                    Text(key.capitalized)
+                    Text(LocalizedStringKey(key))
                     Spacer()
                     
                     let count = session.observations.filter {

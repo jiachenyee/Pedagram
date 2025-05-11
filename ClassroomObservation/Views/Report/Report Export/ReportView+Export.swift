@@ -27,7 +27,7 @@ extension ReportView {
         return pdfURL
     }
     
-    func createExportView<Content: View>(title: String, description: String, @ViewBuilder content: @escaping () -> Content) -> PDFSection {
+    func createExportView<Content: View>(title: LocalizedStringKey, description: LocalizedStringKey, @ViewBuilder content: @escaping () -> Content) -> PDFSection {
         PDFSection {
             PDFViewGroup(VStack {
                 Text(title)

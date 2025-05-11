@@ -10,10 +10,10 @@ import SwiftUI
 
 struct ReportExportMatrixView<ColumnHeader: Identifiable>: View {
     
-    var rowHeaders: [String]
+    var rowHeaders: [LocalizedStringResource]
     var columnHeaders: [ColumnHeader]
     
-    var title: String
+    var title: LocalizedStringResource
     
     var columnHeaderLabel: (ColumnHeader) -> String
     var shouldHighlight: (String, ColumnHeader) -> Bool
@@ -26,7 +26,7 @@ struct ReportExportMatrixView<ColumnHeader: Identifiable>: View {
                     .foregroundStyle(.blue)
                     .fontWeight(.bold)
                 
-                ForEach(rowHeaders, id: \.self) { header in
+                ForEach(rowHeaders, id: \.key) { header in
                     Text(header)
                         .font(.system(size: 11))
                         .frame(height: 16)
@@ -45,8 +45,8 @@ struct ReportExportMatrixView<ColumnHeader: Identifiable>: View {
                             .foregroundStyle(.secondary)
                             .font(.system(size: 11))
                         
-                        ForEach(rowHeaders, id: \.self) { rowHeader in
-                            if shouldHighlight(rowHeader, columnHeader) {
+                        ForEach(rowHeaders, id: \.key) { rowHeader in
+                            if shouldHighlight(rowHeader.key, columnHeader) {
                                 ZStack {
                                     Rectangle()
                                         .fill(.blue)

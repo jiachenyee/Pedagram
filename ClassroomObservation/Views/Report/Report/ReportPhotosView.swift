@@ -40,7 +40,7 @@ struct ReportPhotosView: View {
                                     .foregroundStyle(.secondary)
                                     .monospacedDigit()
                                 
-                                Text(image.caption.isEmpty ? "No Caption" : image.caption)
+                                Text(image.caption.isEmpty ? String(localized: "No Caption") : image.caption)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                             }
                         }

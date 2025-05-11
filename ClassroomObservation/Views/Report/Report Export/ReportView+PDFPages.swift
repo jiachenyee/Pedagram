@@ -117,7 +117,7 @@ extension ReportView {
                                 .foregroundStyle(colorAssignment[key]!)
                                 .opacity(0.4)
                             
-                            Text(key.capitalized)
+                            Text(LocalizedStringKey(key))
                             Spacer()
                             
                             let count = session.observations.filter {
@@ -184,7 +184,7 @@ extension ReportView {
                 for technology in technologiesUsed {
                     ReportExportMatrixView(rowHeaders: ListOfOptionsDictionarySurveyInput.options,
                                            columnHeaders: Array(session.sortedObservations.reversed()),
-                                           title: technology,
+                                           title: LocalizedStringResource(stringLiteral: technology),
                                            columnHeaderLabel: { observation in
                         observation.time.formatted(date: .omitted, time: .shortened)
                     }, shouldHighlight: { row, observation in
@@ -203,7 +203,9 @@ extension ReportView {
                 )
                 
                 for option in ListOfOptionsDictionarySurveyInput.options {
-                    ReportExportMatrixView(rowHeaders: technologiesUsed,
+                    ReportExportMatrixView(rowHeaders: technologiesUsed.map {
+                        LocalizedStringResource(stringLiteral: $0)
+                    },
                                            columnHeaders: Array(session.sortedObservations.reversed()),
                                            title: option,
                                            columnHeaderLabel: { observation in
@@ -212,7 +214,7 @@ extension ReportView {
                         let observationDict = observation.howIsTheTeacherUsingTechnology?.dictValue ?? [:]
                         let selections = observationDict[technology] ?? []
                         
-                        return selections.contains(option)
+                        return selections.contains(option.key)
                     })
                 }
             }
@@ -334,7 +336,7 @@ extension ReportView {
                     Text(image.date.formatted(date: .omitted, time: .shortened))
                         .foregroundStyle(.secondary)
                     
-                    Text(image.caption.isEmpty ? "No Caption" : image.caption)
+                    Text(image.caption.isEmpty ? String(localized: "No Caption") : image.caption)
                         .multilineTextAlignment(.center)
                 }
                 .padding()

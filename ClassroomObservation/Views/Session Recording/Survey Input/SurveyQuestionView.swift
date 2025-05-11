@@ -31,7 +31,7 @@ struct SurveyQuestionView: View {
                 Text("\(Question.allCases.firstIndex(of: selectedQuestion)! + 1) of \(Question.allCases.count)")
                     .contentTransition(.numericText())
                 
-                Text(try! AttributedString(markdown: selectedQuestion.title)
+                Text(try! AttributedString(markdown: String(localized: selectedQuestion.title))
                     .transformingAttributes(\.link, { transformer in
                         if transformer.value != nil {
                             transformer.replace(with: \.backgroundColor, value: .yellow)

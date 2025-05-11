@@ -37,14 +37,14 @@ struct ChecklistRowView: View {
     
     var body: some View {
         Button {
-            selectedValue = option.title
+            selectedValue = option.id
         } label: {
             HStack {
-                Image(systemName: selectedValue == option.title ? "checkmark.circle.fill" : "circle")
+                Image(systemName: selectedValue == option.id ? "checkmark.circle.fill" : "circle")
                     .contentTransition(.symbolEffect(.replace))
                 
                 VStack(alignment: .leading) {
-                    Text(option.title.capitalized)
+                    Text(option.title)
                     if let description = option.description {
                         Text(description)
                             .foregroundStyle(.secondary)

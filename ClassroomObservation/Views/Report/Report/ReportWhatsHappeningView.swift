@@ -114,7 +114,7 @@ struct ReportWhatsHappeningView: View {
                         .foregroundStyle(colorAssignment[key]!)
                         .opacity(0.4)
                     
-                    Text(key.capitalized)
+                    Text(LocalizedStringKey(key))
                     Spacer()
                     
                     let count = session.observations.filter {
@@ -139,7 +139,7 @@ enum StatisticsMethods: Int, CaseIterable, Hashable {
     case mode
     case stdev
     
-    var description: String {
+    var description: LocalizedStringResource {
         switch self {
         case .mean:
             return "Average"

@@ -1,0 +1,3557 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%.2f" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.2f"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.2f"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.2f"
+          }
+        }
+      }
+    },
+    "%@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ • %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ • %2$@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ • %2$@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ • %2$@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ • %2$@"
+          }
+        }
+      }
+    },
+    "%@ Observation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Observasi %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ การสังเกตการณ์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quan sát lúc %@"
+          }
+        }
+      }
+    },
+    "%@%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@%2$lld"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@%2$lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@%2$lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@%2$lld"
+          }
+        }
+      }
+    },
+    "%lf" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lf"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lf"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lf"
+          }
+        }
+      }
+    },
+    "%lld" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "%lld hours" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld jam"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ชั่วโมง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giờ"
+          }
+        }
+      }
+    },
+    "%lld hours %lld minutes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld hours %2$lld minutes"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld jam %2$lld menit"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld ชั่วโมง %2$lld นาที"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld giờ %2$lld phút"
+          }
+        }
+      }
+    },
+    "%lld minutes" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld menit"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld นาที"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld phút"
+          }
+        }
+      }
+    },
+    "%lld of %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld of %2$lld"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld dari %2$lld"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld จาก %2$lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld trong số %2$lld"
+          }
+        }
+      }
+    },
+    "A shorter observation durations can provide more granular data entry, while longer durations can provide more time for data entry.\n\nSelect the one you are most comfortable with. When starting out, it is recommended to go with 15 minutes to familiarise yourself with the process and questions." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi observasi yang lebih pendek dapat memberikan entri data yang lebih terperinci, sementara durasi yang lebih panjang dapat memberikan lebih banyak waktu untuk entri data.\n\nPilih yang paling sesuai dengan Anda. Saat memulai, sebaiknya gunakan waktu 15 menit untuk membiasakan diri dengan proses dan pertanyaan."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลาการสังเกตที่สั้นลงสามารถให้รายละเอียดการป้อนข้อมูลได้มากขึ้น ในขณะที่ระยะเวลาที่นานขึ้นสามารถให้เวลาในการป้อนข้อมูลได้มากขึ้น\n\nเลือกระยะเวลาที่คุณสะดวกที่สุด เมื่อเริ่มต้น ขอแนะนำให้ใช้เวลา 15 นาทีเพื่อทำความคุ้นเคยกับกระบวนการและคำถามต่างๆ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian quan sát ngắn hơn có thể cung cấp dữ liệu chi tiết hơn, trong khi thời gian quan sát dài hơn có thể cung cấp nhiều thời gian hơn để nhập dữ liệu.\n\nChọn thời gian mà bạn cảm thấy thoải mái nhất. Khi bắt đầu, bạn nên dành 15 phút để làm quen với quy trình và các câu hỏi."
+          }
+        }
+      }
+    },
+    "Add Photo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisipkan Foto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แทรกรูปภาพ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chèn ảnh"
+          }
+        }
+      }
+    },
+    "administration" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administration"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Administrasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การบริหาร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự quản lý"
+          }
+        }
+      }
+    },
+    "Analyse the Report" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menganalisis Laporan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วิเคราะห์รายงาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phân tích báo cáo"
+          }
+        }
+      }
+    },
+    "Any final comments?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ada komentar akhir?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีความคิดเห็นสุดท้ายอะไรอีกไหม?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có bình luận cuối cùng nào không?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this image?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apakah Anda yakin ingin menghapus gambar ini?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณแน่ใจว่าต้องการลบภาพนี้หรือไม่?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có chắc chắn muốn xóa hình ảnh này không?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to end the observation session?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apakah Anda yakin ingin mengakhiri sesi observasi?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณแน่ใจว่าต้องการยุติเซสชันการสังเกตการณ์หรือไม่?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có chắc chắn muốn kết thúc buổi quan sát không?"
+          }
+        }
+      }
+    },
+    "Assessment" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penilaian"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การประเมิน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đánh giá"
+          }
+        }
+      }
+    },
+    "Attach images of the classroom into the report." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lampirkan gambar kelas ke dalam laporan."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แนบรูปภาพห้องเรียนเข้าในรายงาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đính kèm hình ảnh lớp học vào báo cáo."
+          }
+        }
+      }
+    },
+    "Average" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rata-rata"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เฉลี่ย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trung bình"
+          }
+        }
+      }
+    },
+    "Average Number of Technologies Used" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rata-rata Jumlah Teknologi yang Digunakan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จำนวนเฉลี่ยของเทคโนโลยีที่ใช้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số lượng công nghệ trung bình được sử dụng"
+          }
+        }
+      }
+    },
+    "Based on the total count of how the technologies are used." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berdasarkan jumlah total bagaimana teknologi digunakan."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตามจำนวนรวมของการใช้เทคโนโลยี"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dựa trên tổng số cách thức sử dụng công nghệ."
+          }
+        }
+      }
+    },
+    "By App" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan Aplikasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โดยแอป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bằng ứng dụng"
+          }
+        }
+      }
+    },
+    "By Purpose" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berdasarkan Tujuan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตามวัตถุประสงค์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo mục đích"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยกเลิก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy bỏ"
+          }
+        }
+      }
+    },
+    "Caption" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keterangan Gambar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำบรรยาย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đầu đề"
+          }
+        }
+      }
+    },
+    "Choose from Photos" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih dari Foto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกจากภาพถ่าย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn từ Ảnh"
+          }
+        }
+      }
+    },
+    "Class" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kelas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระดับ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lớp học"
+          }
+        }
+      }
+    },
+    "Class Duration" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi Kelas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลาเรียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời lượng lớp học"
+          }
+        }
+      }
+    },
+    "Close Observation Record" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catatan Observasi Dekat"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกการสังเกตอย่างใกล้ชิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản ghi quan sát chặt chẽ"
+          }
+        }
+      }
+    },
+    "Close Without Saving" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup Tanpa Menyimpan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปิดโดยไม่บันทึก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng mà không lưu"
+          }
+        }
+      }
+    },
+    "Comments" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komentar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความคิดเห็น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bình luận"
+          }
+        }
+      }
+    },
+    "Comments (%lld)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Komentar (%lld)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความคิดเห็น (%lld)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bình luận (%lld)"
+          }
+        }
+      }
+    },
+    "Complete and Close" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai dan Tutup"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เสร็จสมบูรณ์และปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn thành và Đóng"
+          }
+        }
+      }
+    },
+    "Content presentation – Data collection" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presentasi konten – Pengumpulan data"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การนำเสนอเนื้อหา – การรวบรวมข้อมูล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trình bày nội dung – Thu thập dữ liệu"
+          }
+        }
+      }
+    },
+    "Count" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menghitung"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นับ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đếm"
+          }
+        }
+      }
+    },
+    "Count of the number of students working with technology at each observation." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jumlah siswa yang bekerja dengan teknologi pada setiap pengamatan."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นับจำนวนนักศึกษาที่ทำงานร่วมกับเทคโนโลยีในแต่ละจุดสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đếm số học sinh sử dụng công nghệ trong mỗi lần quan sát."
+          }
+        }
+      }
+    },
+    "Create" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuat"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้าง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo nên"
+          }
+        }
+      }
+    },
+    "Create a new observation every %lld minutes to get consistent results!" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat observasi baru setiap %lld menit untuk mendapatkan hasil yang konsisten!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างการสังเกตใหม่ทุกๆ %lld นาทีเพื่อให้ได้ผลลัพธ์ที่สอดคล้องกัน!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo một quan sát mới sau mỗi %lld phút để có được kết quả nhất quán!"
+          }
+        }
+      }
+    },
+    "Create a new session to get started!" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat sesi baru untuk memulai!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างเซสชั่นใหม่เพื่อเริ่มต้น!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo một phiên mới để bắt đầu!"
+          }
+        }
+      }
+    },
+    "Create a Record" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Rekaman"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างบันทึก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo một bản ghi"
+          }
+        }
+      }
+    },
+    "Create an Observation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Membuat Observasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างการสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo một quan sát"
+          }
+        }
+      }
+    },
+    "Create New Observation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Observasi Baru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างการสังเกตใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo quan sát mới"
+          }
+        }
+      }
+    },
+    "Create New Session" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Sesi Baru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างเซสชั่นใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo phiên mới"
+          }
+        }
+      }
+    },
+    "Create Observation Now" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buat Observasi Sekarang"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้างการสังเกตตอนนี้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo quan sát ngay"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kebiasaan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดเอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phong tục"
+          }
+        }
+      }
+    },
+    "Date/Time" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanggal/Waktu"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันที่/เวลา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày/Giờ"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menghapus"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa bỏ"
+          }
+        }
+      }
+    },
+    "Delete Image" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus Gambar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบรูปภาพ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa hình ảnh"
+          }
+        }
+      }
+    },
+    "Digital product creation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pembuatan produk digital"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การสร้างผลิตภัณฑ์ดิจิตอล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo sản phẩm kỹ thuật số"
+          }
+        }
+      }
+    },
+    "Discussion" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskusi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การอภิปราย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuộc thảo luận"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เสร็จแล้ว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xong"
+          }
+        }
+      }
+    },
+    "Duration" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lamanya"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khoảng thời gian"
+          }
+        }
+      }
+    },
+    "End Session" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akhiri Sesi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ้นสุดเซสชั่น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kết thúc phiên"
+          }
+        }
+      }
+    },
+    "Enrolment" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pendaftaran"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การลงทะเบียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng ký"
+          }
+        }
+      }
+    },
+    "Grade" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nilai"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระดับ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cấp"
+          }
+        }
+      }
+    },
+    "Group work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pekerjaan kelompok"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การทำงานเป็นกลุ่ม"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm việc nhóm"
+          }
+        }
+      }
+    },
+    "Group Work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pekerjaan Kelompok"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การทำงานเป็นกลุ่ม"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm việc nhóm"
+          }
+        }
+      }
+    },
+    "Highly Engaged" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sangat Terlibat"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีส่วนร่วมสูง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rất tích cực"
+          }
+        }
+      }
+    },
+    "How confident the students were with various technologies used within the classroom, when rated on a scale of 1 to 5." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seberapa yakin siswa terhadap berbagai teknologi yang digunakan di kelas, ketika dinilai pada skala 1 hingga 5."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความมั่นใจของนักเรียนกับเทคโนโลยีต่างๆ ที่ใช้ในห้องเรียน เมื่อประเมินในระดับ 1 ถึง 5"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mức độ tự tin của học sinh với các công nghệ khác nhau được sử dụng trong lớp học, khi đánh giá theo thang điểm từ 1 đến 5."
+          }
+        }
+      }
+    },
+    "How confident the teacher was with various technologies used within the classroom, when rated on a scale of 1 to 5." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seberapa yakin guru tersebut terhadap berbagai teknologi yang digunakan di dalam kelas, ketika dinilai pada skala 1 hingga 5."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความมั่นใจของครูต่อเทคโนโลยีต่างๆ ที่ใช้ในห้องเรียน เมื่อประเมินในระดับ 1 ถึง 5"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mức độ tự tin của giáo viên với các công nghệ khác nhau được sử dụng trong lớp học, khi đánh giá theo thang điểm từ 1 đến 5."
+          }
+        }
+      }
+    },
+    "How is the teacher using each technology?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagaimana guru menggunakan setiap teknologi?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครูใช้เทคโนโลยีแต่ละอย่างอย่างไร?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên sử dụng từng công nghệ như thế nào?"
+          }
+        }
+      }
+    },
+    "How many students are doing [Group Work](https://example.com)?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan [Kerja Kelompok](https://example.com)?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีนักเรียนกี่คนที่[ทำการทำงานกลุ่ม](https://example.com])?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm [Làm việc nhóm](https://example.com)?"
+          }
+        }
+      }
+    },
+    "How many students are doing [Independent Work](https://example.com)?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan [Pekerjaan Mandiri](https://example.com)?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเรียนจำนวนกี่คนที่ทำ[การทำงานอิสระ](https://example.com)?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm [Bài tập độc lập](https://example.com)?"
+          }
+        }
+      }
+    },
+    "How many students are doing [Pair Work](https://example.com)?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan [Pekerjaan Berpasangan](https://example.com)?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเรียนจำนวนกี่คนกำลัง[ทำงานเป็นคู่](https://example.com)?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm [Bài tập theo cặp](https://example.com)?"
+          }
+        }
+      }
+    },
+    "How many students are doing Group Work?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan Kerja Kelompok?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีนักเรียนกี่คนที่ทำการทำงานกลุ่ม?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm bài tập nhóm?"
+          }
+        }
+      }
+    },
+    "How many students are doing Independent Work?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan Pekerjaan Mandiri?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเรียนจำนวนกี่คนที่ทำการงานอิสระ?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm bài tập độc lập?"
+          }
+        }
+      }
+    },
+    "How many students are doing Pair Work?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang mengerjakan Kerja Berpasangan?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเรียนจำนวนกี่คนกำลังทำงานเป็นคู่?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu học sinh đang làm bài tập theo cặp?"
+          }
+        }
+      }
+    },
+    "How many students are working with technology?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berapa banyak siswa yang bekerja dengan teknologi?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีนักเรียนจำนวนกี่คนที่ทำงานกับเทคโนโลยี?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có bao nhiêu sinh viên đang làm việc với công nghệ?"
+          }
+        }
+      }
+    },
+    "How Technology is Being Used" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagaimana Teknologi Digunakan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เทคโนโลยีถูกนำมาใช้อย่างไร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công nghệ đang được sử dụng như thế nào"
+          }
+        }
+      }
+    },
+    "How Technology is Used by Teacher" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagaimana Teknologi Digunakan oleh Guru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครูใช้เทคโนโลยีอย่างไร"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công nghệ được Giáo viên sử dụng như thế nào"
+          }
+        }
+      }
+    },
+    "Images" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gambar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปภาพ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hình ảnh"
+          }
+        }
+      }
+    },
+    "Independent work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pekerjaan mandiri"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การทำงานอิสระ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công việc độc lập"
+          }
+        }
+      }
+    },
+    "Independent Work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pekerjaan Mandiri"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การทำงานอิสระ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công việc độc lập"
+          }
+        }
+      }
+    },
+    "Information" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ข้อมูล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông tin"
+          }
+        }
+      }
+    },
+    "interacting with students" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interacting With Students"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berinteraksi dengan Siswa"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การโต้ตอบกับนักเรียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tương tác với sinh viên"
+          }
+        }
+      }
+    },
+    "Interval" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selang"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ช่วงเวลา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khoảng cách"
+          }
+        }
+      }
+    },
+    "Lesson Time" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu Pelajaran"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาเรียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giờ học"
+          }
+        }
+      }
+    },
+    "List down the questions posed (if any)" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buatlah daftar pertanyaan yang diajukan (jika ada)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระบุคำถามที่ถูกถาม (ถ้ามี)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liệt kê các câu hỏi được đặt ra (nếu có)"
+          }
+        }
+      }
+    },
+    "List the hardware as well as the software application being used" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daftarkan perangkat keras serta aplikasi perangkat lunak yang digunakan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงรายการฮาร์ดแวร์รวมถึงซอฟต์แวร์แอปพลิเคชันที่กำลังใช้งานอยู่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liệt kê phần cứng cũng như ứng dụng phần mềm đang được sử dụng"
+          }
+        }
+      }
+    },
+    "Longer observation durations can allow for more time to input data." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi observasi yang lebih lama dapat memberikan lebih banyak waktu untuk memasukkan data."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลาการสังเกตที่นานขึ้นจะช่วยให้มีเวลาในการป้อนข้อมูลมากขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian quan sát dài hơn có thể cho phép có nhiều thời gian hơn để nhập dữ liệu."
+          }
+        }
+      }
+    },
+    "Median" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modus"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มัธยฐาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trung vị thống kê"
+          }
+        }
+      }
+    },
+    "Mode" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Median"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โหมดเชิงสถิติ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ thống kê"
+          }
+        }
+      }
+    },
+    "New Session" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesi Baru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เซสชันใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên mới"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berikutnya"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ต่อไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kế tiếp"
+          }
+        }
+      }
+    },
+    "No Caption" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada teks"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีคำบรรยาย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có chú thích"
+          }
+        }
+      }
+    },
+    "No Session Selected" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak Ada Sesi yang Dipilih"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีการเลือกเซสชัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có phiên nào được chọn"
+          }
+        }
+      }
+    },
+    "No Sessions Available" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak Ada Sesi yang Tersedia"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่มีเซสชั่นที่พร้อมใช้งาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có phiên nào có sẵn"
+          }
+        }
+      }
+    },
+    "Non-instructional" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non-instruksional"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ใช่การเรียนการสอน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không hướng dẫn"
+          }
+        }
+      }
+    },
+    "Not Engaged" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak Bertunangan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่หมั้นหมาย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không đính hôn"
+          }
+        }
+      }
+    },
+    "Number" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nomor"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวเลข"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con số"
+          }
+        }
+      }
+    },
+    "Observation at %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Observasi jam %@"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สังเกตการณ์เวลา %@"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quan sát lúc %@"
+          }
+        }
+      }
+    },
+    "Observation Duration" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi Observasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลาการสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian quan sát"
+          }
+        }
+      }
+    },
+    "Observation Interval" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selang Observasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ช่วงเวลาการสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khoảng thời gian quan sát"
+          }
+        }
+      }
+    },
+    "Observation Report" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan Observasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รายงานการสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo quan sát"
+          }
+        }
+      }
+    },
+    "Observations" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Observasi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การสังเกต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quan sát"
+          }
+        }
+      }
+    },
+    "Observations Recorded" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Observasi Dicatat"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การสังเกตที่บันทึกไว้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quan sát được ghi lại"
+          }
+        }
+      }
+    },
+    "On a scale of 1 to 5, with 1 being not engaged and 5 being highly engaged.\n\nConsider the following:\n• Content is presented to students in multiple modalities\n• Students choose what and how they use technology\n• Students choose how they complete the given task" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pada skala 1 hingga 5, dengan 1 berarti tidak terlibat dan 5 berarti sangat terlibat.\n\nPertimbangkan hal berikut:\n• Konten disajikan kepada siswa dalam berbagai cara\n• Siswa memilih apa dan bagaimana mereka menggunakan teknologi\n• Siswa memilih bagaimana mereka menyelesaikan tugas yang diberikan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โดยใช้มาตราส่วน 1 ถึง 5 โดย 1 คือไม่มีส่วนร่วม และ 5 คือมีส่วนร่วมมาก\n\nพิจารณาสิ่งต่อไปนี้:\n• เนื้อหาจะถูกนำเสนอต่อนักเรียนในรูปแบบต่างๆ\n• นักเรียนเลือกว่าจะใช้เทคโนโลยีอะไรและอย่างไร\n• นักเรียนเลือกวิธีทำงานที่ได้รับมอบหมายให้เสร็จสมบูรณ์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo thang điểm từ 1 đến 5, với 1 là không tham gia và 5 là rất tham gia.\n\nHãy xem xét những điều sau:\n• Nội dung được trình bày cho học sinh theo nhiều phương thức\n• Học sinh chọn công nghệ nào và cách sử dụng công nghệ nào\n• Học sinh chọn cách hoàn thành nhiệm vụ được giao"
+          }
+        }
+      }
+    },
+    "On a scale of 1 to 5." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pada skala 1 sampai 5."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ในระดับ 1 ถึง 5"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo thang điểm từ 1 đến 5."
+          }
+        }
+      }
+    },
+    "Once you have set it up, get started by creating an observation. Follow the questions on screen and fill it out based on what you observe in the classroom.\n\nYou will be prompted to submit a new observation every 10 or 15 minutes, based on your Recording Duration." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setelah Anda mengaturnya, mulailah dengan membuat sebuah observasi. Ikuti pertanyaan-pertanyaan di layar dan isi berdasarkan apa yang Anda amati di kelas.\n\nAnda akan diminta untuk mengirimkan observasi baru setiap 10 atau 15 menit, berdasarkan Durasi Rekaman Anda."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคุณตั้งค่าเรียบร้อยแล้ว ให้เริ่มต้นด้วยการสร้างการสังเกต ทำตามคำถามบนหน้าจอและกรอกตามสิ่งที่คุณสังเกตในห้องเรียน\n\nคุณจะได้รับแจ้งให้ส่งการสังเกตใหม่ทุกๆ 10 หรือ 15 นาที โดยขึ้นอยู่กับระยะเวลาการบันทึกของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau khi thiết lập xong, hãy bắt đầu bằng cách tạo một quan sát. Làm theo các câu hỏi trên màn hình và điền vào dựa trên những gì bạn quan sát được trong lớp học.\n\nBạn sẽ được nhắc nộp một quan sát mới sau mỗi 10 hoặc 15 phút, dựa trên Thời lượng ghi âm của bạn."
+          }
+        }
+      }
+    },
+    "Optional" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opsional"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่จำเป็น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không bắt buộc"
+          }
+        }
+      }
+    },
+    "Other" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lainnya"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อื่น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khác"
+          }
+        }
+      }
+    },
+    "Pair work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kerja berpasangan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำงานเป็นคู่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm việc theo cặp"
+          }
+        }
+      }
+    },
+    "Pair Work" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pekerjaan berpasangan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำงานเป็นคู่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm việc theo cặp"
+          }
+        }
+      }
+    },
+    "Pedagram" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pedagram"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "Pedagram Report" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan Pedagram"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รายงาน Pedagram"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo Pedagram"
+          }
+        }
+      }
+    },
+    "Photo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รูปถ่าย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ảnh"
+          }
+        }
+      }
+    },
+    "Photos" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ภาพถ่าย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hình ảnh"
+          }
+        }
+      }
+    },
+    "Pick a Recording Duration" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih Durasi Rekaman"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกระยะเวลาในการบันทึก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn thời lượng ghi âm"
+          }
+        }
+      }
+    },
+    "Previous" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebelumnya"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ก่อนหน้า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trước"
+          }
+        }
+      }
+    },
+    "Questions Asked" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pertanyaan yang Diajukan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำถามที่ถูกถาม"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu hỏi được hỏi"
+          }
+        }
+      }
+    },
+    "Questions Posed" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pertanyaan yang Diajukan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำถามที่ถูกตั้ง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu hỏi được đặt ra"
+          }
+        }
+      }
+    },
+    "Questions posed by the teacher" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pertanyaan yang diajukan oleh guru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำถามที่คุณครูตั้ง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những câu hỏi được giáo viên đặt ra"
+          }
+        }
+      }
+    },
+    "Questions posed by the teacher to the students." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pertanyaan yang diajukan oleh guru kepada siswa."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำถามที่ครูถามนักเรียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những câu hỏi mà giáo viên đặt ra cho học sinh."
+          }
+        }
+      }
+    },
+    "Record the class, subject, duration, and other additional details.\n\nThis information will show up in the report." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catat kelas, subjek, durasi, dan detail tambahan lainnya.\n\nInformasi ini akan muncul dalam laporan."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บันทึกชั้นเรียน วิชา ระยะเวลา และรายละเอียดเพิ่มเติมอื่นๆ\n\nข้อมูลนี้จะปรากฏในรายงาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi lại lớp học, môn học, thời lượng và các thông tin bổ sung khác.\n\nThông tin này sẽ hiển thị trong báo cáo."
+          }
+        }
+      }
+    },
+    "Report" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รายงาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo"
+          }
+        }
+      }
+    },
+    "Report generated on %@ by [Pedagram](https://pedagram.com) (pedagram.com)." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan dibuat pada %@ oleh [Pedagram](https://pedagram.com) (pedagram.com)."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รายงานสร้างขึ้นเมื่อ %@ โดย [Pedagram](https://pedagram.com) (pedagram.com)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo được tạo vào ngày %@ bởi [Pedagram](https://pedagram.com) (pedagram.com)."
+          }
+        }
+      }
+    },
+    "Report generated on %@ by [Pedagram](https://pedagram.com)." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan dibuat pada %@ oleh [Pedagram](https://pedagram.com)."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รายงานสร้างขึ้นเมื่อ %@ โดย [Pedagram](https://pedagram.com)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo cáo được tạo vào ngày %@ bởi [Pedagram](https://pedagram.com)"
+          }
+        }
+      }
+    },
+    "Select a session to open it!" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih sesi untuk membukanya!"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลือกเซสชั่นเพื่อเปิด!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn một phiên để mở!"
+          }
+        }
+      }
+    },
+    "Sessions" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เซสชั่น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên họp"
+          }
+        }
+      }
+    },
+    "Set the interval between each observation. You would be notified to create a new observation every %lld minutes." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tetapkan interval antara setiap observasi. Anda akan diberi tahu untuk membuat observasi baru setiap %lld menit."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำหนดช่วงเวลาระหว่างการสังเกตแต่ละครั้ง คุณจะได้รับการแจ้งเตือนให้สร้างการสังเกตใหม่ทุก ๆ %lld นาที"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt khoảng thời gian giữa mỗi lần quan sát. Bạn sẽ được thông báo tạo một quan sát mới sau mỗi %lld phút."
+          }
+        }
+      }
+    },
+    "Set Up Your Session" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siapkan Sesi Anda"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตั้งค่าเซสชันของคุณ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thiết lập phiên của bạn"
+          }
+        }
+      }
+    },
+    "Shorter observation durations can provide more granular data entry." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durasi observasi yang lebih pendek dapat memberikan entri data yang lebih terperinci."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระยะเวลาการสังเกตที่สั้นลงสามารถให้รายการข้อมูลที่ละเอียดยิ่งขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian quan sát ngắn hơn có thể cung cấp dữ liệu nhập chi tiết hơn."
+          }
+        }
+      }
+    },
+    "Standard Deviation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deviasi Standar"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ค่าเบี่ยงเบนมาตรฐาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Độ lệch chuẩn"
+          }
+        }
+      }
+    },
+    "Start Recording" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai Merekam"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มการบันทึก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu ghi âm"
+          }
+        }
+      }
+    },
+    "Student Engagement" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keterlibatan Siswa"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การมีส่วนร่วมของนักศึกษา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự tham gia của sinh viên"
+          }
+        }
+      }
+    },
+    "Students doing…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siswa melakukan…"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเรียนกำลังทำ…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học sinh đang làm…"
+          }
+        }
+      }
+    },
+    "Students working with technology" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siswa bekerja dengan teknologi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักศึกษาทำงานกับเทคโนโลยี"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học sinh làm việc với công nghệ"
+          }
+        }
+      }
+    },
+    "Students’ Confidence in Technology" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kepercayaan Diri Siswa terhadap Teknologi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความมั่นใจของนักศึกษาต่อเทคโนโลยี"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự tự tin của học sinh vào công nghệ"
+          }
+        }
+      }
+    },
+    "Subject" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subjek"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เรื่อง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chủ thể"
+          }
+        }
+      }
+    },
+    "Take Photo" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ambil Foto"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ถ่ายรูป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chụp ảnh"
+          }
+        }
+      }
+    },
+    "Task" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tugas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "งาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhiệm vụ"
+          }
+        }
+      }
+    },
+    "Teacher doing…" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guru melakukan…"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครูกำลังทำ…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên đang làm…"
+          }
+        }
+      }
+    },
+    "Teacher’s Confidence in Technology" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kepercayaan Guru terhadap Teknologi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความมั่นใจของครูต่อเทคโนโลยี"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niềm tin của giáo viên vào công nghệ"
+          }
+        }
+      }
+    },
+    "Technology used by teacher" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teknologi yang digunakan oleh guru"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เทคโนโลยีที่ครูใช้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Công nghệ được giáo viên sử dụng"
+          }
+        }
+      }
+    },
+    "The task set by the teacher is categorised into _active_, _collaborative_, _constructive_, _authentic_, and _goal directed_.\n\n**Active**: Students are engaged in using technology as a tool rather than passively receiving information from the technology.\n\n**Collaborative**: Students use technology tools to collaborate with others rather than working individually at all times.\n\n**Constructive**: Students use technology tools to connect new information to their prior knowledge rather than to passively receive information.\"\n\n**Authentic**: Students use technology tools to link learning activities to the world beyond the instructional setting rather than working on decontextualized assignments.\n\n**Goal Directed**: Students use technology tools to set goals, plan activities, monitor progress, and evaluate results rather than simply completing assignments without reflection." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tugas yang ditetapkan oleh guru dikategorikan menjadi _aktif_, _kolaboratif_, _konstruktif_, _asli_, dan _berorientasi pada tujuan_.\n\n**Aktif**: Siswa terlibat dalam penggunaan teknologi sebagai alat alih-alih menerima informasi dari teknologi secara pasif.\n\n**Kolaboratif**: Siswa menggunakan alat teknologi untuk berkolaborasi dengan orang lain alih-alih bekerja secara individual setiap saat.\n\n**Konstruktif**: Siswa menggunakan alat teknologi untuk menghubungkan informasi baru dengan pengetahuan sebelumnya alih-alih menerima informasi secara pasif.\n\n**Autentik**: Siswa menggunakan alat teknologi untuk menghubungkan kegiatan pembelajaran dengan dunia di luar lingkungan pembelajaran alih-alih mengerjakan tugas yang tidak terkait dengan konteks.\n\n**Berorientasi pada Tujuan**: Siswa menggunakan alat teknologi untuk menetapkan tujuan, merencanakan kegiatan, memantau kemajuan, dan mengevaluasi hasil alih-alih sekadar menyelesaikan tugas tanpa refleksi."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "งานที่ครูมอบหมายให้แบ่งตามประเภท ได้แก่ _เชิงรุก_ _เชิงร่วมมือ_ _เชิงสร้างสรรค์_ _แท้จริง_ และ _มุ่งเป้าหมาย_\n\n**เชิงรุก**: นักเรียนมีส่วนร่วมในการใช้เทคโนโลยีเป็นเครื่องมือแทนที่จะรับข้อมูลจากเทคโนโลยีอย่างเฉื่อยๆ\n\n**เชิงร่วมมือ**: นักเรียนใช้เครื่องมือเทคโนโลยีเพื่อทำงานร่วมกับผู้อื่นแทนที่จะทำงานเป็นรายบุคคลตลอดเวลา\n\n**เชิงสร้างสรรค์**: นักเรียนใช้เครื่องมือเทคโนโลยีเพื่อเชื่อมโยงข้อมูลใหม่กับความรู้เดิมแทนที่จะรับข้อมูลอย่างเฉื่อยๆ\"\n\n**เชิงจริง**: นักเรียนใช้เครื่องมือเทคโนโลยีเพื่อเชื่อมโยงกิจกรรมการเรียนรู้กับโลกภายนอกการเรียนการสอนแทนที่จะทำงานมอบหมายที่ไม่เกี่ยวข้องกับบริบท\n\n**มุ่งเป้าหมาย**: นักเรียนใช้เครื่องมือเทคโนโลยีเพื่อกำหนดเป้าหมาย วางแผนกิจกรรม ติดตามความคืบหน้า และประเมินผลแทนที่จะทำการบ้านเพียงอย่างเดียวโดยไม่ไตร่ตรอง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhiệm vụ do giáo viên giao được phân loại thành _chủ động_, _hợp tác_, _xây dựng_, _chính thống_ và _hướng tới mục tiêu_.\n\n**Chủ động**: Học sinh tham gia sử dụng công nghệ như một công cụ thay vì thụ động tiếp nhận thông tin từ công nghệ.\n\n**Hợp tác**: Học sinh sử dụng các công cụ công nghệ để hợp tác với người khác thay vì làm việc riêng lẻ mọi lúc.\n\n**Xây dựng**: Học sinh sử dụng các công cụ công nghệ để kết nối thông tin mới với kiến ​​thức trước đó của mình thay vì thụ động tiếp nhận thông tin.\"\n\n**Chính thống**: Học sinh sử dụng các công cụ công nghệ để liên kết các hoạt động học tập với thế giới bên ngoài bối cảnh hướng dẫn thay vì làm các bài tập không theo ngữ cảnh.\n\n**Hướng tới mục tiêu**: Học sinh sử dụng các công cụ công nghệ để đặt mục tiêu, lập kế hoạch hoạt động, theo dõi tiến độ và đánh giá kết quả thay vì chỉ hoàn thành bài tập mà không suy nghĩ."
+          }
+        }
+      }
+    },
+    "These are subjective comments taken from the observer." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ini adalah komentar subjektif yang diambil dari pengamat."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งเหล่านี้เป็นความคิดเห็นส่วนตัวที่ได้รับมาจากผู้สังเกตการณ์"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đây là những nhận xét chủ quan của người quan sát."
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian"
+          }
+        }
+      }
+    },
+    "Time remaining before the next observation should be taken." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu yang tersisa sebelum observasi berikutnya harus diambil."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ควรใช้ระยะเวลาที่เหลือก่อนการสังเกตการณ์ครั้งต่อไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian còn lại trước khi thực hiện quan sát tiếp theo."
+          }
+        }
+      }
+    },
+    "Time until next observation" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Waktu sampai observasi berikutnya"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เวลาจนถึงการสังเกตครั้งต่อไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian cho đến lần quan sát tiếp theo"
+          }
+        }
+      }
+    },
+    "Type an item here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketik item di sini."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พิมพ์รายการที่นี่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập một mục ở đây."
+          }
+        }
+      }
+    },
+    "Type another item here." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketik item lainnya di sini."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พิมพ์รายการอื่นที่นี่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập mục khác vào đây."
+          }
+        }
+      }
+    },
+    "Understand what the student is doing (independent work, pair work, or group work) compared to what the teacher is doing." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memahami apa yang dilakukan siswa (kerja mandiri, kerja berpasangan, atau kerja kelompok) dibandingkan dengan apa yang dilakukan guru."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เข้าใจสิ่งที่นักเรียนกำลังทำ (การทำงานอิสระ การทำงานเป็นคู่ หรือการทำงานเป็นกลุ่ม) เทียบกับสิ่งที่ครูกำลังทำ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiểu được những gì học sinh đang làm (làm việc độc lập, làm việc theo cặp hoặc làm việc nhóm) so với những gì giáo viên đang làm."
+          }
+        }
+      }
+    },
+    "Value" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nilai"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ค่า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giá trị"
+          }
+        }
+      }
+    },
+    "WELCOME TO" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SELAMAT DATANG DI"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยินดีต้อนรับสู่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHÀO MỪNG ĐẾN VỚI"
+          }
+        }
+      }
+    },
+    "What is [the teacher](https://example.com) doing?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang sedang dilakukan [guru](https://example.com)?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "[คุณครู](https://example.com)กำลังทำอะไรอยู่?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "[Giáo viên](https://example.com) đang làm gì?"
+          }
+        }
+      }
+    },
+    "What is the level of student engagement?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bagaimana tingkat keterlibatan siswa?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ระดับการมีส่วนร่วมของนักศึกษาอยู่ที่เท่าไร?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mức độ tham gia của sinh viên như thế nào?"
+          }
+        }
+      }
+    },
+    "What is the purpose of each tool (from the previous question) in the classroom?\nSelect all that apply." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa tujuan setiap alat (dari pertanyaan sebelumnya) di kelas?\nPilih semua yang sesuai."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "จุดประสงค์ของเครื่องมือแต่ละอย่าง (จากคำถามก่อนหน้า) ในห้องเรียนคืออะไร?\nเลือกทุกข้อที่เกี่ยวข้อง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mục đích của từng công cụ (từ câu hỏi trước) trong lớp học là gì?\nChọn tất cả các câu trả lời phù hợp."
+          }
+        }
+      }
+    },
+    "What is the teacher doing" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang sedang dilakukan guru?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณครูกำลังทำอะไรอยู่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên đang làm gì"
+          }
+        }
+      }
+    },
+    "What is the teacher doing?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang sedang dilakukan guru?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คุณครูกำลังทำอะไรอยู่?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên đang làm gì?"
+          }
+        }
+      }
+    },
+    "What is the technology being used [by the teacher](https://example.com)?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teknologi apa yang digunakan [oleh guru](https://example.com)?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เทคโนโลยีที่ [ครู](https://example.com) นำมาใช้คืออะไร?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "[Giáo viên](https://example.com) đang sử dụng công nghệ nào?"
+          }
+        }
+      }
+    },
+    "What is the technology being used by the teacher?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teknologi apa yang digunakan oleh guru tersebut?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครูใช้เทคโนโลยีอะไร?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên đang sử dụng công nghệ gì?"
+          }
+        }
+      }
+    },
+    "What were the questions posed by the teacher to students?" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa saja pertanyaan yang diajukan guru kepada siswa?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ครูถามคำถามอะไรกับนักเรียนบ้าง?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giáo viên đã đặt ra những câu hỏi gì cho học sinh?"
+          }
+        }
+      }
+    },
+    "What’s Going On" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang sedang terjadi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เกิดอะไรขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyện gì đang xảy ra"
+          }
+        }
+      }
+    },
+    "What‘s Happening" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang sedang terjadi"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เกิดอะไรขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyện gì đang xảy ra"
+          }
+        }
+      }
+    },
+    "When the lesson is over, select End Session to generate a report.\n\nThe report is designed to be easily analysed to gain insights into how technology is used in the classroom, and what the students have been doing at various times.\n\nYou can also export the report as a PDF to share with others." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setelah pelajaran selesai, pilih Akhiri Sesi untuk membuat laporan.\n\nLaporan ini dirancang agar mudah dianalisis untuk mendapatkan wawasan tentang bagaimana teknologi digunakan di kelas, dan apa yang telah dilakukan siswa pada berbagai waktu.\n\nAnda juga dapat mengekspor laporan sebagai PDF untuk dibagikan kepada orang lain."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อบทเรียนสิ้นสุดลง ให้เลือก \"สิ้นสุดเซสชัน\" เพื่อสร้างรายงาน\n\nรายงานได้รับการออกแบบมาให้วิเคราะห์ได้ง่ายเพื่อให้ได้รับข้อมูลเชิงลึกเกี่ยวกับวิธีการใช้เทคโนโลยีในห้องเรียน และสิ่งที่นักเรียนทำในช่วงเวลาต่างๆ\n\nนอกจากนี้ คุณยังสามารถส่งออกรายงานเป็น PDF เพื่อแบ่งปันกับผู้อื่นได้อีกด้วย"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi bài học kết thúc, hãy chọn Kết thúc phiên để tạo báo cáo.\n\nBáo cáo được thiết kế để dễ dàng phân tích nhằm hiểu rõ hơn về cách sử dụng công nghệ trong lớp học và những gì học sinh đã làm vào những thời điểm khác nhau.\n\nBạn cũng có thể xuất báo cáo dưới dạng PDF để chia sẻ với người khác."
+          }
+        }
+      }
+    },
+    "When you are ready to start, press Start Recording. The timer will start after you take the first recording." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat Anda siap untuk memulai, tekan Mulai Merekam. Penghitung waktu akan dimulai setelah Anda mengambil rekaman pertama."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อคุณพร้อมที่จะเริ่มต้น ให้กดเริ่มบันทึก ตัวจับเวลาจะเริ่มทำงานหลังจากที่คุณบันทึกครั้งแรก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi bạn đã sẵn sàng bắt đầu, hãy nhấn Bắt đầu ghi. Bộ đếm thời gian sẽ bắt đầu sau khi bạn thực hiện lần ghi đầu tiên."
+          }
+        }
+      }
+    },
+    "whole class instruction" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whole Class Interaction"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interaksi Seluruh Kelas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปฏิสัมพันธ์ทั้งชั้นเรียน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tương tác toàn lớp"
+          }
+        }
+      }
+    },
+    "Work with a peer and observe their lessons. Use Pedagram to provide objective feedback." : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekerjalah dengan teman sejawat dan amati pelajaran mereka. Gunakan Pedagram untuk memberikan umpan balik yang objektif."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทำงานร่วมกับเพื่อนร่วมงานและสังเกตบทเรียนของพวกเขา ใช้ Pedagram เพื่อให้ข้อเสนอแนะที่เป็นกลาง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm việc với bạn bè và quan sát bài học của họ. Sử dụng Pedagram để cung cấp phản hồi khách quan."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

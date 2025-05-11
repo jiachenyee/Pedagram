@@ -12,7 +12,7 @@ struct TechnologyUseReportCartView: View {
     
     var session: Session
     
-    let options: [String] = {
+    let options: [LocalizedStringResource] = {
         ListOfOptionsDictionarySurveyInput.options
     }()
     
@@ -84,12 +84,12 @@ struct TechnologyUseReportCartView: View {
                 .fontWeight(.semibold)
                 .foregroundStyle(.secondary)
             
-            ReportMatrixView(rowHeaders: technologiesUsed,
+            ReportMatrixView(rowHeaders: technologiesUsed.map { LocalizedStringResource(stringLiteral: $0) },
                              columnHeaders: Array(session.sortedObservations.reversed())) {
                 Picker(selection: $selectedTechnologyPurpose) {
-                    ForEach(options, id: \.self) { option in
+                    ForEach(options, id: \.key) { option in
                         Text(option)
-                            .tag(option)
+                            .tag(option.key)
                     }
                 } label: {
                     EmptyView()
@@ -105,7 +105,7 @@ struct TechnologyUseReportCartView: View {
                 return selections.contains(selectedTechnologyPurpose)
             }
             .onAppear {
-                selectedTechnologyPurpose = options.first ?? ""
+                selectedTechnologyPurpose = options.first?.key ?? ""
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

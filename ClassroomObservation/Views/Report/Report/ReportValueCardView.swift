@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReportValueCardView: View {
     
-    var title: String
+    var title: LocalizedStringKey
     var value: String
     
     var body: some View {

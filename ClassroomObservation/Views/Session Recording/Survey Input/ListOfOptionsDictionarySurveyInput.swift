@@ -13,7 +13,7 @@ struct ListOfOptionsDictionarySurveyInput: View {
     @Binding var record: ObservationRecord
     @State private var otherValue = ""
     
-    static let options = [
+    static let options: [LocalizedStringResource] = [
         "Assessment",
         "Content presentation – Data collection",
         "Digital product creation",
@@ -52,9 +52,10 @@ struct ListOfOptionsDictionarySurveyInput: View {
 //                                        .tag(option)
 //                                }
 //                            }
-                        ForEach(Self.options, id: \.self) { option in
+                        
+                        ForEach(Self.options, id: \.key) { option in
                             let isSelected = Binding {
-                                value.contains(option)
+                                value.contains(option.key)
                             } set: { newValue in
                                 var mutableDict = (record.dictValue ?? [:])
                                 
@@ -63,16 +64,15 @@ struct ListOfOptionsDictionarySurveyInput: View {
                                 }
                                 
                                 if newValue {
-                                    mutableDict[section]!.append(option)
+                                    mutableDict[section]!.append(option.key)
                                 } else {
                                     mutableDict[section]!.removeAll {
-                                        $0 == option
+                                        $0 == option.key
                                     }
                                 }
                                 
                                 record = .dict(mutableDict)
                             }
-                            
                             
                             CheckboxRowView(isSelected: isSelected,
                                             option: ChecklistOption(title: option))
@@ -80,7 +80,7 @@ struct ListOfOptionsDictionarySurveyInput: View {
                         
                         OtherCheckboxRowView(otherValue: Binding(get: {
                             value.filter({
-                                !Self.options.contains($0)
+                                !Self.options.map { $0.key }.contains($0)
                             }).first ?? ""
                         }, set: { newValue in
                             var mutableDict = (record.dictValue ?? [:])
@@ -90,7 +90,7 @@ struct ListOfOptionsDictionarySurveyInput: View {
                             }
                             
                             mutableDict[section] = mutableDict[section]!.filter {
-                                Self.options.contains($0)
+                                Self.options.map { $0.key }.contains($0)
                             }
                             
                             if !newValue.isEmpty {
@@ -122,7 +122,7 @@ struct CheckboxRowView: View {
                 Image(systemName: isSelected ? "checkmark.square.fill" : "square")
                     .contentTransition(.symbolEffect(.replace))
                 VStack(alignment: .leading) {
-                    Text(option.title.capitalized)
+                    Text(option.title)
                     if let description = option.description {
                         Text(description)
                             .foregroundStyle(.secondary)

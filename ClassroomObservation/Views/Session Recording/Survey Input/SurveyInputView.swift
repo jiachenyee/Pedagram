@@ -27,7 +27,7 @@ struct SurveyInputView: View {
         if isiPad {
             NavigationSplitView {
                 List {
-                    ForEach(Question.allCases, id: \.title) { question in
+                    ForEach(Question.allCases) { question in
                         Button {
                             save()
                             selectedQuestion = question
@@ -65,7 +65,7 @@ struct SurveyInputView: View {
         } else {
             VStack {
                 HStack {
-                    ForEach(Question.allCases, id: \.title) { question in
+                    ForEach(Question.allCases) { question in
                         Button {
                             save()
                             selectedQuestion = question

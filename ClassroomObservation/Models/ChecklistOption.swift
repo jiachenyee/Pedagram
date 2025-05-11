@@ -6,9 +6,22 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ChecklistOption: Hashable, Identifiable {
-    var id: String { title }
-    var title: String
-    var description: String?
+    var id: String
+    var title: LocalizedStringResource
+    var description: LocalizedStringKey?
+    
+    init(title: LocalizedStringResource, description: LocalizedStringKey? = nil) {
+        self.title = title
+        
+        self.description = description
+        
+        self.id = title.key
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

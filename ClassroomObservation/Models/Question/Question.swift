@@ -6,27 +6,32 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Question {
+struct Question: Identifiable {
+    
+    var id: Int {
+        rawValue
+    }
     
     var rawValue: Int {
         Self.allCases.firstIndex(of: self)!
     }
     
     var inputType: InputType
-    var title: String
-    var unformattedTitle: String
-    var shorthandTitle: String
-    var subtitle: String?
+    var title: LocalizedStringResource
+    var unformattedTitle: LocalizedStringResource
+    var shorthandTitle: LocalizedStringResource
+    var subtitle: LocalizedStringResource?
     
     var path: WritableKeyPath<Observation, ObservationRecord?>
     var supportsAutocomplete: Bool = false
     
     init(inputType: InputType,
-         title: String,
-         unformattedTitle: String? = nil,
-         shorthandTitle: String? = nil,
-         subtitle: String? = nil,
+         title: LocalizedStringResource,
+         unformattedTitle: LocalizedStringResource? = nil,
+         shorthandTitle: LocalizedStringResource? = nil,
+         subtitle: LocalizedStringResource? = nil,
          path: WritableKeyPath<Observation, ObservationRecord?>,
          supportsAutocomplete: Bool = false) {
         self.inputType = inputType

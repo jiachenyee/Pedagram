@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReportMatrixView<HeaderView: View, ColumnHeader: Identifiable>: View {
     
-    var rowHeaders: [String]
+    var rowHeaders: [LocalizedStringResource]
     var columnHeaders: [ColumnHeader]
     
     @ViewBuilder var headerView: HeaderView
@@ -22,7 +22,7 @@ struct ReportMatrixView<HeaderView: View, ColumnHeader: Identifiable>: View {
             VStack(alignment: .leading, spacing: 0) {
                 headerView
                 
-                ForEach(rowHeaders, id: \.self) { header in
+                ForEach(rowHeaders, id: \.key) { header in
                     Text(header)
                         .font(.system(size: 16))
                         .frame(height: 24)
@@ -40,8 +40,8 @@ struct ReportMatrixView<HeaderView: View, ColumnHeader: Identifiable>: View {
                             Text(columnHeaderLabel(columnHeader))
                                 .foregroundStyle(.secondary)
                             
-                            ForEach(rowHeaders, id: \.self) { rowHeader in
-                                if shouldHighlight(rowHeader, columnHeader) {
+                            ForEach(rowHeaders, id: \.key) { rowHeader in
+                                if shouldHighlight(rowHeader.key, columnHeader) {
                                     ZStack {
                                         Rectangle()
                                             .fill(.blue)

@@ -122,7 +122,7 @@ struct OnboardingView: View {
                 Button {
                     isNewSessionPresented.toggle()
                 } label: {
-                    Text("Create Session")
+                    Text("Create New Session")
                         .padding()
                         .frame(maxWidth: .infinity)
                 }

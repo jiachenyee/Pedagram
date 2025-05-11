@@ -13,7 +13,7 @@ struct SessionNotStartedTimeSelectionView: View {
     @Binding var recordingFrequency: Double?
     
     var minutes: Int
-    var message: String
+    var message: LocalizedStringKey
     var systemImage: String
     
     var body: some View {

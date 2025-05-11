@@ -12,8 +12,8 @@ struct OnboardingDynamicView<Content: View>: View {
     @ViewBuilder
     var content: Content
     
-    var title: String
-    var description: String
+    var title: LocalizedStringKey
+    var description: LocalizedStringKey
     
     var body: some View {
         GeometryReader { reader in
